@@ -20,6 +20,9 @@ body {
     background-color: #A67B5B; /* Color madera al hacer scroll */
 }
 
+.navbar-nav.me-auto {
+    font-size: 20px;
+}
 
 /* Ajustes para el navbar cuando colapsa */
 .navbar-toggler {
@@ -33,7 +36,7 @@ body {
 
 .btn-brown {
     background-color: #A67C52;
-    color: rgb(255, 255, 255);
+    color: white;
     border: none;
 }
 

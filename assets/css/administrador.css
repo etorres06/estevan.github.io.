@@ -25,3 +25,77 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Estilos generales para el sidebar */
+.sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .sidebar h3 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Ajuste para que el contenido no se esconda debajo del sidebar */
+  .content {
+    margin-left: 25%;
+    padding: 20px;
+  }
+  
+  /* Estilos específicos para la tabla */
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table td img {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Modal: Inputs y select ajustados */
+  .modal .form-label {
+    font-weight: 500;
+  }
+  
+  .modal .form-control,
+  .modal .form-select {
+    border-radius: 8px;
+  }
+  
+  /* Botones */
+  .btn {
+    border-radius: 8px;
+  }
+  
+  .btn-sm {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+  
+  /* Tarjeta con sombra suave */
+  .card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Badges para estado del producto */
+  .badge {
+    font-size: 0.85rem;
+    padding: 0.4em 0.6em;
+  }
+  

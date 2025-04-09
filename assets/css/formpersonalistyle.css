@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+  background-color: #bb9d85;
+}
+
+
+  .mueble-formulario form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px #287467bd;
+  }
+
+  
+  .titulo-mobiliario {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .mueble-formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  
+  .mueble-formulario select,
+  .mueble-formulario input[type="text"],
+  .mueble-formulario input[type="number"],
+  .mueble-formulario input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #287467bd;
+  }
+  
+  .mueble-formulario button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #287467bd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mueble-formulario button:hover {
+    background-color: #094239bd;
+  }
+  
+  .mueble-formulario .hidden {
+    display: none;
+  }
+
+
+  

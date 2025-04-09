@@ -1,67 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    padding-top: 70px
+    padding-top: 70px;
 }
-
-/* Estilos generales del navbar */
-.navbar {
-    transition: background-color 0.3s ease-in-out;
-    background-color: #faf8eb5e; /* Translucidez inicial */
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
-    
-}
-
-.nav-link:hover {
-    color: #b89878;
-}
-
-.navbar.scrolled {
-    background-color: #b89878; /* Color madera al hacer scroll */
-}
-
-/* Ajustes para el navbar cuando colapsa */
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-nav {
-    padding: 10px;
-}
-
-.btn-brown {
-    background-color: #b89878;
-    color: white;
-    border: none;
-}
-
-.btn-brown:hover {
-    background-color: #b89878;
-}
-
-.btn-outline-brown {
-    border: 2px solid #b89878;
-    color: #b89878;
-}
-
-.btn-outline-brown:hover {
-    background-color: #b89878;
-    color: white;
-}
-
-/* DROPDOWN0 */
-.dropdown-menu {
-    background: #b89878;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgb(0, 0, 0);
-}
-
-/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-
 
 /* ///////////////////modal //////////////////////// */
 .modal-dialog {

@@ -1,23 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    color: #000000;
-    padding-top: 70px;
+    background-color: #bb9d85;
+    padding-top: 95px;
 }
 
 /* Estilos generales del navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
-    background-color: #faf8eba1; /* Translucidez inicial */
+    background-color: #faf8eb5e; /* Translucidez inicial */
     backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
     
 }
 .nav-link:hover {
     color: #ffffff;
 }
 .navbar.scrolled {
-    background-color: #ffffff; /* Color madera al hacer scroll */
+    background-color: #A67B5B; /* Color madera al hacer scroll */
 }
 
+.navbar-nav.me-auto {
+    font-size: 20px;
+}
 
 /* Ajustes para el navbar cuando colapsa */
 .navbar-toggler {
