@@ -1,0 +1,79 @@
+/* Estilos generales del navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #faf8eb5e; /* Translucidez inicial */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
+    font-family: 'Roboto Slab', serif;
+}
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-nav.me-auto {
+    font-size: 20px;
+}
+
+
+/* Ajustes para el navbar cuando colapsa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    padding: 10px;
+}
+
+/* DROPDOWN0 */
+.dropdown-menu {
+    background: #FAF8EB;
+    padding: 10px;
+    box-shadow: 5px 3px 10px rgb(0, 0, 0);
+}
+
+/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ///////////////////menu icono //////////////////////// */
+
+/* Ícono de usuario en el navbar */
+.user-dropdown a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.user-dropdown a:hover {
+    color: #000;
+}
+
+/* Dropdown personalizado */
+.dropdown-menu {
+    min-width: 180px;
+    box-shadow: 0px 4px 10px rgba(75, 72, 72, 0.8);
+}
+
+/* Estilos para los ítems del dropdown */
+.dropdown-item {
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Separador dentro del dropdown */
+.dropdown-divider {
+    margin: 8px 0;
+}
+
+/* Botón "SALIR" con color rojo */
+.dropdown-item.logout {
+    color: #d9172a;
+}
+
+.dropdown-item.logout:hover {
+    background-color: #f8d7da;
+}

@@ -1,154 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #bb9d85;
+    color: #0f0f0f;
     padding-top: 70px;
 }
 
-/* ///////////////////modal //////////////////////// */
-.modal-dialog {
-    max-width: 60%;
-    width: 90%;
+
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1{
+    font-family: 'Roboto Slab', serif;
 }
 
-.modal-content {
-    display: flex;
-    max-width: 800px;
-    border-radius: 15px;
-    padding: 20px;
-    border: none;
+h6{
+    font-family: 'Roboto Slab', serif;
 }
 
-.modal-content:hover {
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.651);
+p {
+    font-family: 'Manrope', sans-serif;
 }
 
-.modal-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button{
+    font-family: 'Viga', sans-serif;
 }
+/*///////////////////////////////////////// CARDS /////////////////////////////////////////////*/
 
-.imagen-modal {
-    border-radius: 10px;
-    transition: box-shadow 0.3s ease-in-out;
-    animation: flotante 3s infinite ease-in-out;
-}
-
-@keyframes flotante {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-/* Estilos del modal */
-.modal-content {
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-/* Contenedor de la imagen con opacidad */
-.imagen-fondo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Estructura de la tarjeta */
+.card {
+    background-color:#ebe3d8 ;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Capa oscura encima de la imagen */
-.imagen-fondo {
+/* Imagen de la tarjeta */
+.card-img-top {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%); /* Ajusta el nivel de oscuridad */
+    height: 250px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Contenedor del avatar */
-.avatar-container {
-    position: absolute;
-    top: 52%;
-    left: 51%;
-    background-color: #FAF8EB;
-    transform: translate(-50%, -50%);
-    border-radius: 10%;
-    padding: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Avatar */
-.avatar {
-    width: 100%;
-
-    border-radius: 5%;
-}
-
-/* Estilo de los campos de entrada */
-.input-group-text {
-    background: white;
-    border-right: none;
-}
-
-.form-control {
-    border-left: none;
-}
-
-/* Botón de inicio de sesión */
-.btn-primary {
-    background-color: #2c3e50;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #1a252f;
-}
-
-.bg-brown {
-    background-color: white !important;
-}
-
-
-/* CARDS */
-.card{
-    background-color: #b89878 !important;
-    min-height: 0px; /* Ajusta este valor según necesites */
-    transition: box-shadow 0.3s ease-in-out;
-}
-.card-title {
-    white-space: normal; /* Permite que el texto se ajuste */
-    text-wrap: balance;  /* Distribuye el texto de manera estética */
-}
 .card:hover {
+    transform: scale(1.15);    
     box-shadow: 0px 0px 15px 5px #3cbba4c0 ;
 }
 
-.card img {
-    filter: brightness(1); /* Brillo normal */
-    transition: filter 0.3s ease-in-out; /* Suaviza la transición */
+/* Aumentar ligeramente el tamaño de la imagen en hover */
+.card:hover .card-img-top {
+    transform: scale(1.1);
 }
 
+/* Reducir el tamaño de las tarjetas inactivas */
+.card-grid:hover .card:not(:hover) {
+    transform: scale(0.9);
+}
 
-.card img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+/* Aplicar el desenfoque, brillo y saturación a las imágenes inactivas */
+.card-grid:hover .card:not(:hover) .card-img-top {
+    filter: brightness(0.5) saturate(1.0) contrast(1.2) blur(2px);
 }
 
 .custom-button{
     color: #000;
     background-color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 20px;
     text-decoration: none;
     
 }
 
 .custom-button:hover{
-    background-color: #3cbba4c0;
+    background-color: #287467bd;
     box-shadow: 0px 0px 5px 2px white ;
 }
 
-
-/*///////// Modal categoria ////////*/
-
+/*/////////////// modals /////////////////////*/
 
 /* Estilo general del modal */
 .modal-content-cate {
-    background: #b89878; /* Fondo blanco */
+    background: #b89878; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -156,6 +85,8 @@ body {
     max-width: 600px; /* Ancho máximo */
     margin: auto;
 }
+
+
 
 /* Cerrar botón */
 .btn-close {
@@ -165,19 +96,66 @@ body {
 }
 
 
-/* Imagen dentro del modal */
+
+/* Contenedor de la imagen */
 .modal-image-cate {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px; 
+    overflow: hidden;
 }
 
+/* Imagen con efecto de aparición */
 .modal-image-cate img {
     max-width: 50%;
     height: auto;
     border-radius: 15px;
+    transform: scale(0.8);
+    animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
 }
+
+/* Efecto de borde con iluminación */
+.modal-image-cate::before {
+    content: "";
+    position: absolute;
+    width: 53%;
+    height: 50%;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 30px #3cbba4c0;
+    opacity: 0;
+    animation: glowBorder 2.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
+}
+
+/* Animación de la imagen */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animación del borde iluminado */
+@keyframes glowBorder {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.descripcion-producto{
+    background-color: #fde9d7f0;
+}
+
+
+
 
 /* Texto dentro del modal */
 .modal-content-cate p {
@@ -186,50 +164,17 @@ body {
 }
 
 .modal-button{
-    background: #3cbba4c0;
+    background: #287467bd;
     border: none;
     font-size: 1.2rem;
 }
 
 .modal-button:hover{
-    background: #26685cc0;
+    background: #3cbba4c0;
     border: none;
     font-size: 1.2rem;
 }
 
 
-
-/*///////// pie de pagina ////////*/
-
-footer a {
-    text-decoration: none;
-}
-
-footer .list-inline-item {
-    margin: 15 10px;
-}
-
-footer i {
-    font-size: 1.5rem;
-}
-
-
-main {
-    flex: 1; /* Esto empuja el footer hacia abajo */
-}
-
-footer {
-    background-color: #8b5e3c; /* Verde menta */
-    color: black; /* Cambiar color del texto si es necesario */
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-}
-
-
-footer a:hover {
-    transform: scale(1.2);
-    color: #654321; /* Un tono más oscuro al pasar el cursor */
-}
 
 

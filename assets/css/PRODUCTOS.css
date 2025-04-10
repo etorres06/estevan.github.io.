@@ -1,211 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #bb9d85;
     padding-top: 70px;
-}
-
-/* Estilos generales del navbar */
-.navbar {
-    transition: background-color 0.3s ease-in-out;
-    background-color: #faf8eb5e; /* Translucidez inicial */
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
-    
-}
-
-.nav-link:hover {
-    color: #b89878;
-}
-
-.navbar.scrolled {
-    background-color: #b89878; /* Color madera al hacer scroll */
-}
-
-/* Ajustes para el navbar cuando colapsa */
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-nav {
-    padding: 10px;
-}
-
-.btn-brown {
-    background-color: #b89878;
-    color: white;
-    border: none;
-}
-
-.btn-brown:hover {
-    background-color: #b89878;
-}
-
-.btn-outline-brown {
-    border: 2px solid #b89878;
-    color: #b89878;
-}
-
-.btn-outline-brown:hover {
-    background-color: #b89878;
-    color: white;
-}
-
-/* DROPDOWN0 */
-.dropdown-menu {
-    background: #b89878;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgb(0, 0, 0);
-}
-
-/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
-.dropdown:hover .dropdown-menu {
-    display: block;
+    color: #0f0f0f;
 }
 
 
+/* ///////////////////productos //////////////////////// */
 
-/* ///////////////////modal //////////////////////// */
-.modal-dialog {
-    max-width: 60%;
-    width: 90%;
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1 h6 h3 {
+    font-family: 'Roboto Slab', serif;
 }
 
-.modal-content {
-    display: flex;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px #51dfcc;
-    padding: 20px;
-    border: none;
-    transition: box-shadow 0.5s ease-in-out;
+
+p li {
+    font-family: 'Manrope', sans-serif;
 }
 
-.modal-content:hover {
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.651);
+button{
+    font-family: 'Viga', sans-serif;
 }
 
-.modal-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*///////////// modal registro obligatorio ////////////////////*/
+  /* Modal centrado*/
+  .modal-dialog.modal-attention {
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
 
-.imagen-modal {
-    border-radius: 10px;
-    transition: box-shadow 0.3s ease-in-out;
-    animation: flotante 3s infinite ease-in-out;
-}
 
-@keyframes flotante {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-/* Estilos del modal */
-.modal-content {
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-/* Contenedor de la imagen con opacidad */
-.imagen-fondo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-}
-
-/* Capa oscura encima de la imagen */
-.imagen-fondo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%); /* Ajusta el nivel de oscuridad */
-}
-
-/* Contenedor del avatar */
-.avatar-container {
-    position: absolute;
-    top: 52%;
-    left: 51%;
-    background-color: #FAF8EB;
-    transform: translate(-50%, -50%);
-    border-radius: 10%;
-    padding: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Avatar */
-.avatar {
-    width: 100%;
-
-    border-radius: 5%;
-}
-
-/* Estilo de los campos de entrada */
-.input-group-text {
-    background: white;
-    border-right: none;
-}
-
-.form-control {
-    border-left: none;
-}
-
-/* Botón de inicio de sesión */
-.btn-primary {
-    background-color: #2c3e50;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #1a252f;
-}
-
-.bg-brown {
-    background-color: white !important;
-}
-
-/* ////////////////producto ///////////////////////////*/
-
+/* === Estilos del Contenedor General === */
 .container-producto {
     display: flex;
     max-width: 80%;
-    max-height: auto;
     margin: 50px auto;
-    background: #3cbba4c0;
+    background: linear-gradient(to right, #c7eee9e7, #60e1d0, #3cbba4c0);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Imagen del producto centrada */
 .product-image {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     max-width: 60%;
-    max-height: auto;
 }
 
-
-
+/* Detalles del producto */
 .product-details {
     flex: 1;
     padding-left: 20px;
 }
 
 .btn-link {
-    text-decoration: none; /* Quita el subrayado */
-    color: #000000; /* Color del texto */
+    text-decoration: none;
+    color: #000000;
     padding: 10px 15px;
     border: 2px solid #000000;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
-    margin-left: 0%;
+    margin-left: 80%;
 }
-.btn-link:hover{
+
+.btn-link:hover {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #fffffff0;
     border: 2px solid #9a7e62;
 }
 
@@ -215,7 +81,7 @@ h1 {
 }
 
 ul li {
-    margin-bottom: 10px; /* Espaciado entre elementos */
+    margin-bottom: 10px;
 }
 
 .calificacion {
@@ -236,27 +102,61 @@ ul li {
     margin-bottom: 13px;
 }
 
-/* Cerrar botón */
-.product-details {
-    position: relative; /* Necesario para que el btn-close se posicione correctamente */
-    padding: 20px;
-}
-
-/* Botón de cierre alineado arriba a la derecha */
-.btn-close-cate {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10; /* Asegura que esté por encima del contenido */
-}
-.btn-whatsapp {
-    background-color: #ffffff !important;
+/* Botón del formulario */
+.btn-formu {
+    background-color: #fffffff0 !important;
     border-color: #3cbba4c0 !important;
     color: rgb(0, 0, 0) !important;
 }
 
-.btn-whatsapp:hover {
+.btn-formu:hover {
     background-color: #21806eb9 !important;
     border-color: #21806eb9 !important;
 }
+
+/* === Pixelated Image Card (Transición de Imagenes) === */
+.pixelated-image-card {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Ajusta según sea necesario */
+    border-radius: 10px;
+}
+
+.pixelated-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    display: block;
+}
+
+.pixelated-image-card:hover .top-image {
+    opacity: 0;
+}
+
+
+.top-image {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+}
+
+.bottom-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
 

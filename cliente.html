@@ -7,49 +7,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/cliente.css">
+    <link rel="stylesheet" href="../assets/css/nav-usuario-style.css">
+    <link rel="stylesheet" href="../assets/css/footerstyle.css">
+    <link rel="stylesheet" href="../assets/css/cliente.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand ps-4" href="#" >
-                <img src="assets/images/LOGO2.png" width="130px" alt="Valcucini" class="logo">
+                <img src="../assets/images/nav/LOGO.png" width="130px" alt="Valcucini" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="cliente.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">INMOBILIARIO</a>
+                        <a class="nav-link dropdown-toggle" href="../categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">Mobiliario</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cocinas.html">COCINAS</a></li>
-                            <li><a class="dropdown-item" href="closet.html">CLOSETS</a></li>
-                            <li><a class="dropdown-item" href="escritorios.html">ESCRITORIOS</a></li>
-                            <li><a class="dropdown-item" href="muebledebaño.html">MUEBLES DE BAÑO</a></li>
-                            <li><a class="dropdown-item" href="recepcion.html">RECEPCIÓN</a></li>
-                            <li><a class="dropdown-item" href="puertas.html">PUERTAS</a></li>
-                            <li><a class="dropdown-item" href="entretinimiento.html">CENTRO DE ENTRETENIMIENTO</a></li>
-                            <li><a class="dropdown-item" href="mobiliario.html">MOBILIARIO Y MUCHO MAS</a></li>
+                            <li><a class="dropdown-item" href="../categorias/cocinas.html">Cocinas</a></li>
+                            <li><a class="dropdown-item" href="../categorias/closet.html">Closets</a></li>
+                            <li><a class="dropdown-item" href="../categorias/escritorios.html">Escritorios</a></li>
+                            <li><a class="dropdown-item" href="../categorias/muebledebaño.html">Muebles De Baño</a></li>
+                            <li><a class="dropdown-item" href="../categorias/recepcion.html">Recepción</a></li>
+                            <li><a class="dropdown-item" href="../categorias/puertas.html">Puertas</a></li>
+                            <li><a class="dropdown-item" href="../categorias/entretinimiento.html">Centro De Entretenimiento</a></li>
+                            <li><a class="dropdown-item" href="../categorias/mobiliario.html">Mobiliario Y Mucho Más</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../sobre_nosotros.html">Sobre Nosotros</a></li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <input class="form-control me-5" type="search" placeholder="Buscar...">
                 </form>
                 <div class="dropdown user-dropdown">
                     <a href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person fs-3"></i>
+                        <i class="bi bi-person-circle fs-3"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="mi-cuenta.html">MI CUENTA</a></li>
+                        <li><a class="dropdown-item" href="../mi-cuenta.html">MI CUENTA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item logout" href="index.html">SALIR</a></li>
+                        <li><a class="dropdown-item logout" href="../index.html">SALIR</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,47 +67,77 @@
             <button type="button" class="btn-close btn-close-black align-items-center" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
-            <h5 class="fw-bold">Vienvenido</h5>
+            <h5 class="fw-bold">Bienvenido</h5>
             <ul class="list-group">
                 <li class="list-group-item"><a href="#" class="text-decoration-none">Detalles del perfil</a></li>
                 <li class="list-group-item"><a href="#" class="text-decoration-none">Cambiar la contraseña</a></li>
             </ul>
         </div>
     </div>
+
+    <section id="portafolio" class="container mt-5 ">
+        <h1 class="text-center">Descuentos</h1>
+        
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="../formulariopersonalizado.html">
+                    <img src="../assets/images/Descuentos/descuento1.png" class="carousel-image d-block w-100" alt="Imagen 1">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="../formulariopersonalizado.html">
+                    <img src="../assets/images/Descuentos/descuento2.png" class="carousel-image d-block w-100" alt="Imagen 1">
+                </a>            
+            </div>
+            <div class="carousel-item">
+                <a href="../formulariopersonalizado.html">
+                    <img src="../assets/images/Descuentos/descuento3.png" class="carousel-image d-block w-100" alt="Imagen 1">
+                </a>            
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
     
-    <article>
+    <section>
         <h1 class="text-center my-5">Recomendados para ti</h1>
         <div class="container mt-4">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados1.png" class="img-fluid rounded-3 " alt="Sala">
+                    <img src="../assets/images/cliente/recomendados/recomendados1.png" class="img-fluid rounded-3 " alt="Sala">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados2.png" class="img-fluid rounded-3 " alt="Cocina">
+                    <img src="../assets/images/cliente/recomendados/recomendados2.png" class="img-fluid rounded-3 " alt="Cocina">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados3.jpg" class="img-fluid rounded-3 " alt="Escritorio">
+                    <img src="../assets/images/cliente/recomendados/recomendados3.jpg" class="img-fluid rounded-3 " alt="Escritorio">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados4.png" class="img-fluid rounded-3" alt="Baño">
+                    <img src="../assets/images/cliente/recomendados/recomendados4.png" class="img-fluid rounded-3" alt="Baño">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados5.png" class="img-fluid rounded-3 subir-imagen" alt="Iluminación">
+                    <img src="../assets/images/cliente/recomendados/recomendados5.png" class="img-fluid rounded-3 subir-imagen" alt="Iluminación">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados6.jpg" class="img-fluid rounded-3 " alt="Puertas">
+                    <img src="../assets/images/cliente/recomendados/recomendados6.jpg" class="img-fluid rounded-3 " alt="Puertas">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados7.jpg" class="img-fluid rounded-3 subir-imagen" alt="Televisión">
+                    <img src="../assets/images/cliente/recomendados/recomendados7.jpg" class="img-fluid rounded-3 subir-imagen" alt="Televisión">
                 </div>
                 <div class="col">
-                    <img src="assets/images/cliente/recomendados/recomendados8.png" class="img-fluid rounded-3" alt="Icono diseño">
+                    <img src="../assets/images/cliente/recomendados/recomendados8.png" class="img-fluid rounded-3" alt="Icono diseño">
                 </div>
             </div>
         </div>
-    </article>
+    </section>
 
-    <article>
+    <section>
         <div class="container mt-5">
             <h2 class="text-center mt-5 mb-4">Inspiración para cada espacio de tu hogar</h2>
     
@@ -123,11 +159,11 @@
                 <section id="cocinas" class="collapse show mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/cocinas1.png" class="img-fluid rounded-3" alt="Cocina">
+                            <img src="../assets/images/cliente/inspiracion/Cocina1.jpg" class="img-fluid rounded-3" alt="Cocina">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/cocinas2.jpg" class="img-fluid rounded-3" alt="Cocina">
-                            <img src="assets/images/cliente/inspiracion/cocinas3.png" class="img-fluid rounded-3" alt="Cocina">
+                            <img src="../assets/images/cliente/inspiracion/Cocina2.jpg" class="img-fluid rounded-3" alt="Cocina">
+                            <img src="../assets/images/cliente/inspiracion/Cocina3.jpg" class="img-fluid rounded-3" alt="Cocina">
                         </div>
                     </div>
                 </section>
@@ -136,11 +172,11 @@
                 <section id="banos" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/baño1.jpg" class="img-fluid rounded-3" alt="Baño">
+                            <img src="../assets/images/cliente/inspiracion/baño1.jpg" class="img-fluid rounded-3" alt="Baño">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/baño2.jpg" class="img-fluid rounded-3" alt="Baño">
-                            <img src="assets/images/cliente/inspiracion/baño3.jpg" class="img-fluid rounded-3" alt="Baño">
+                            <img src="../assets/images/cliente/inspiracion/baño2.jpg" class="img-fluid rounded-3" alt="Baño">
+                            <img src="../assets/images/cliente/inspiracion/baño3.jpg" class="img-fluid rounded-3" alt="Baño">
                         </div>
                     </div>
                 </section>
@@ -149,11 +185,11 @@
                 <section id="entretenimiento" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/Centro de entretenimiento1.jpg" class="img-fluid rounded-3" alt="Centro de entretenimiento">
+                            <img src="../assets/images/cliente/inspiracion/Centro de entretenimiento1.jpg" class="img-fluid rounded-3" alt="Centro de entretenimiento">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/Centro de entretenimiento2.jpg" class="img-fluid rounded-3" alt="Centro de entretenimiento">
-                            <img src="assets/images/cliente/inspiracion/Centro de entretenimiento3.jpg" class="img-fluid rounded-3" alt="Centro de entretenimiento">
+                            <img src="../assets/images/cliente/inspiracion/Centro de entretenimiento2.jpg" class="img-fluid rounded-3" alt="Centro de entretenimiento">
+                            <img src="../assets/images/cliente/inspiracion/Centro de entretenimiento3.jpg" class="img-fluid rounded-3" alt="Centro de entretenimiento">
                         </div>
                     </div>
                 </section>
@@ -162,11 +198,11 @@
                 <section id="puertas" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/puerta1.jpg" class="img-fluid rounded-3" alt="Puerta">
+                            <img src="../assets/images/cliente/inspiracion/puerta1.jpg" class="img-fluid rounded-3" alt="Puerta">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/puerta2.jpg" class="img-fluid rounded-3" alt="Puerta">
-                            <img src="assets/images/cliente/inspiracion/puerta3.jpg" class="img-fluid rounded-3" alt="Puerta">
+                            <img src="../assets/images/cliente/inspiracion/puerta2.jpg" class="img-fluid rounded-3" alt="Puerta">
+                            <img src="../assets/images/cliente/inspiracion/puerta3.jpg" class="img-fluid rounded-3" alt="Puerta">
                         </div>
                     </div>
                 </section>
@@ -174,11 +210,11 @@
                 <section id="closets" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/closet1.jpg" class="img-fluid rounded-3" alt="Closets">
+                            <img src="../assets/images/cliente/inspiracion/closet1.jpg" class="img-fluid rounded-3" alt="Closets">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/closet2.jpg" class="img-fluid rounded-3" alt="Closet">
-                            <img src="assets/images/cliente/inspiracion/closet3.jpg" class="img-fluid rounded-3" alt="Closet">
+                            <img src="../assets/images/cliente/inspiracion/closet2.jpg" class="img-fluid rounded-3" alt="Closet">
+                            <img src="../assets/images/cliente/inspiracion/closet3.jpg" class="img-fluid rounded-3" alt="Closet">
                         </div>
                     </div>
                 </section>
@@ -186,11 +222,11 @@
                 <section id="escritorios" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/escritorios1.jpg" class="img-fluid rounded-3" alt="Escritorio">
+                            <img src="../assets/images/cliente/inspiracion/escritorio1.jpg" class="img-fluid rounded-3" alt="Escritorio">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/escritorios2.jpg" class="img-fluid rounded-3" alt="Escritorio">
-                            <img src="assets/images/cliente/inspiracion/escritorios3.jpg" class="img-fluid rounded-3" alt="Escritorio">
+                            <img src="../assets/images/cliente/inspiracion/Escritorio2.jpeg" class="img-fluid rounded-3" alt="Escritorio">
+                            <img src="../assets/images/cliente/inspiracion/escritorio3.jpg" class="img-fluid rounded-3" alt="Escritorio">
                         </div>
                     </div>
                 </section>
@@ -198,11 +234,11 @@
                 <section id="recepcion" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/recepcion1.jpg" class="img-fluid rounded-3" alt="Recepcion">
+                            <img src="../assets/images/cliente/inspiracion/recepcion1.jpg" class="img-fluid rounded-3" alt="Recepcion">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/recepcion2.jpg" class="img-fluid rounded-3" alt="Recepcion">
-                            <img src="assets/images/cliente/inspiracion/recepcion3.jpg" class="img-fluid rounded-3" alt="Recepcion">
+                            <img src="../assets/images/cliente/inspiracion/recepcion2.jpg" class="img-fluid rounded-3" alt="Recepcion">
+                            <img src="../assets/images/cliente/inspiracion/recepcion3.jpg" class="img-fluid rounded-3" alt="Recepcion">
                         </div>
                     </div>
                 </section>
@@ -210,17 +246,17 @@
                 <section id="mucho" class="collapse mb-5" data-bs-parent="#contenedor-secciones">
                     <div class="row g-3">
                         <div class="col-lg-8">
-                            <img src="assets/images/cliente/inspiracion/mucho mas1.jpg" class="img-fluid rounded-3" alt="Mucho mas">
+                            <img src="../assets/images/cliente/inspiracion/mobiliario1.jpg" class="img-fluid rounded-3" alt="Mucho mas">
                         </div>
                         <div class="col-lg-4 d-flex flex-column gap-3">
-                            <img src="assets/images/cliente/inspiracion/mucho mas2.jpg" class="img-fluid rounded-3" alt="Mucho mas">
-                            <img src="assets/images/cliente/inspiracion/mucho mas3.jpg" class="img-fluid rounded-3" alt="Mucho mas">
+                            <img src="../assets/images/cliente/inspiracion/mobiliario2.jpg" class="img-fluid rounded-3" alt="Mucho mas">
+                            <img src="../assets/images/cliente/inspiracion/mobiliario3.jpg" class="img-fluid rounded-3" alt="Mucho mas">
                         </div>
                     </div>
                 </section>
             </div>
         </div>
-    </article>
+    </section>
     
     
 
@@ -280,27 +316,73 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
-                        <div class="product card"> 
-                            <img src="assets/images/mas_vendido/m1.jpg" class="img-fluid" alt="Producto 1">
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdBaño2.html">
+                                <img src="../assets/images/categoria_Baño/Baño2.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Mueble flotante en acabado blanco minimalista</p>
+                            </div>
                         </div>
-                        <div class="product card">
-                            <img src="assets/images/mas_vendido/m2.jpg" class="img-fluid" alt="Producto 2">
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdCloset3.html">
+                                <img src="../assets/images/categoria_Closets/Closet3.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Closet de Temporada y Almacenamiento</p>
+                            </div>
                         </div>
-                        <div class="product card">
-                            <img src="assets/images/mas_vendido/m3.jpg" class="img-fluid" alt="Producto 3">
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdCocina2.html">
+                                <img src="../assets/images/categoria_Cocinas/Cocina2.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Cocina Minimalista Urbana</p>
+                            </div>
                         </div>
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdEntretenimiento2.html">
+                                <img src="../assets/images/categoria_entretenimiento/Centro de entretenimiento2.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Centro de entretenimiento con panel decorativo y detalles en madera</p>
+                            </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center">
-                        <div class="product card">
-                            <img src="assets/images/mas_vendido/m4.jpg" class="img-fluid" alt="Producto 4">
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdEscritorio4.html">
+                                <img src="../assets/images/categoria_escritorios/Escritorio4.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Escritorio ejecutivo con diseño robusto</p>
+                            </div>
                         </div>
-                        <div class="product card">
-                            <img src="assets/images/mas_vendido/m5.jpg" class="img-fluid" alt="Producto 5">
+                        <div class="product card mx-2">
+                            <a href="../productos/Prodmobiliario4.html">
+                                <img src="../assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Repisa de baño con múltiples compartimentos</p>
+                            </div>
                         </div>
-                        <div class="product card">
-                            <img src="assets/images/mas_vendido/m6.jpg" class="img-fluid" alt="Producto 6">
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdPuerta2.html">
+                                <img src="../assets/images/categoria_puertas/Puerta2.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Puerta en melamina oscura</p>
+                            </div>
+                        </div>
+                        <div class="product card mx-2">
+                            <a href="../productos/ProdRecepcion2.html">
+                                <img src="../assets/images/categoria_recepcion/Recepcion2.jpg" class="card-img-top" alt="Producto X">
+                            </a>
+                            <div class="card-body p-2 text-center">
+                                <p class="card-title mb-0">Mostrador de recepción con cubierta de mármol sintético</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -315,28 +397,29 @@
     </section>
     
     <footer>
-        <div class="container text-center">
+        <div class="container text-center py-3">
             <h5 class=" mt-5 mb-3">COCINAS VALCUCINI</h5>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="sobre_nosotros.html" class="text-dark">ACERCA DE NOSOTROS</a></li>
-                <li class="list-inline-item"><a href="categoria.html" class="text-dark">CATEGORÍAS</a></li>
-                <li class="list-inline-item"><a href="index.html" class="text-dark">INFORMACIÓN</a><li></li>
+                <li class="list-inline-item"><a href="sobre_nosotros.html" class="footer-link">ACERCA DE NOSOTROS</a></li>
+                <li class="list-inline-item"><a href="categoria.html" class="footer-link">CATEGORÍAS</a></li>
+                <li class="list-inline-item"><a href="index.html" class="footer-link">INFORMACIÓN</a><li></li>
+                
             </ul>
             <div class="my-3">
-                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/19MJMzzzCd/" class="footer-link mx-2" ><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/valcucini_cocinas?igsh=MWtqa241NDF6cWt0dg==" class="footer-link mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-link mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/3124339001" class="footer-link mx-2"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p class="small">
                 <strong>TÉRMINOS Y CONDICIONES</strong> | LÍNEA NACIONAL: 01 8000 230854 - BOGOTÁ: PBX 388 43 90 - HORARIO DE ATENCIÓN: LUN-SAB 7:00 A.M A 7:00 PM
                 <br>
                 NOTIFICACIONES: CARRERA 49 # 141 - 27, BOGOTÁ, COLOMBIA
                 <br>
-                <a href="mailto:contactenos@cocinasvalcucini.com" class="text-dark">CONTACTENOS@COCINASVALCUCINI.COM</a> | RAZÓN SOCIAL: COCINAS VALCUCINI S.A.S. | NIT: 7.168.725-1
+                <a href="mailto:contactenos@cocinasvalcucini.com" class="footer-link">CONTACTENOS@COCINASVALCUCINI.COM</a> | RAZÓN SOCIAL: COCINAS VALCUCINI S.A.S. | NIT: 7.168.725-1
                 <br>© 2025 TODOS LOS DERECHOS RESERVADOS
                 <br>
-                <a href="#" class="text-dark">SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</a>
+                <a href="#" class="footer-link">SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</a>
             </p>
         </div>
     </footer>

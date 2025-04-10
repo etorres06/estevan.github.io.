@@ -1,11 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #bb9d85;
     color: #0f0f0f;
 }
 
+/* //////////////////////////////////////////letra ////////////////////////////////////////////// */
+h1{
+    font-family: 'Roboto Slab', serif;
+}
 
-/* ///////////////////otra //////////////////////// */
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+
+
+/* //////////////////////////////////////////secciones ////////////////////////////////////////////// */
+
+
 .hero-section {
     background: url('../images/header/fondo.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -40,6 +58,40 @@ body {
     position: relative;
     z-index: 1; /* Asegura que el contenido esté por encima del fondo opaco */
 }
+
+/*///////////// Descuentos ////////////////////*/
+  /* Modal centrado*/
+  .modal-dialog.modal-attention {
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
+
+  /* Imagen con efecto de aparición */
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transform: scale(0.8);
+    animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
+}
+
+/* Animación de la imagen */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*///////////// carrucel ////////////////////*/
 
 .carousel-inner img {
     width: 100%;  /* Ajusta el ancho al 100% del contenedor */
@@ -79,14 +131,14 @@ body {
     border-radius: 10px; /* Bordes suaves */;
 }
 
-.btn-Index{
-    background-color: #ddb892;
-    color: rgb(0, 0, 0);
+.btn-brown {
+    background-color: #8B5A2B;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
 }
-.btn-Index:hover {
+.btn-brown:hover {
     background-color: #287467bd;
     border-color: #51dfcc;
 }
@@ -149,24 +201,54 @@ body {
 
 
 
-.card {
+/*///////////// mas vendidos ////////////////////*/
+.product.card {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
+    background-color: #fff;
+    width: 300px;
+    height: 320px; /* Altura uniforme para todas */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.card img {
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
+.product.card:hover {
     transform: scale(1.05);
 }
 
-.card:hover img {
+.product.card img.card-img-top {
+    height: 220px;               /* Altura fija para todas las imágenes */
+    width: 100%;
+    object-fit: cover;           /* Recorta sin deformar */
+    object-position: center;     /* Centra la imagen */
+    transition: transform 0.3s ease-in-out;
+}
+
+.product.card:hover img.card-img-top {
     transform: scale(1.1);
 }
+
+.card-body {
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+
+
 

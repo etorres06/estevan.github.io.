@@ -5,46 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias Inmuebles</title>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    
-
-    <link rel="stylesheet" href="assets/css/inmobiliario.css">
-    <link rel="stylesheet" href="assets/css/navstyle.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../assets/css/navstyle.css">
+    <link rel="stylesheet" href="../assets/css/footerstyle.css">
+    <link rel="stylesheet" href="../assets/css/inmobiliario.css">
 
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand ps-4" href="#" >
-                <img src="assets/images/nav/LOGO.png" width="130px" alt="Valcucini" class="logo">
+                <img src="../assets/images/nav/LOGO.png" width="130px" alt="Valcucini" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">Mobiliario</a>
+                        <a class="nav-link dropdown-toggle" href="../categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">Mobiliario</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cocinas.html">Cocinas</a></li>
-                            <li><a class="dropdown-item" href="closet.html">Closets</a></li>
-                            <li><a class="dropdown-item" href="escritorios.html">Escritorios</a></li>
-                            <li><a class="dropdown-item" href="muebledebaño.html">Muebles De Baño</a></li>
-                            <li><a class="dropdown-item" href="recepcion.html">Recepción</a></li>
-                            <li><a class="dropdown-item" href="puertas.html">Puertas</a></li>
-                            <li><a class="dropdown-item" href="entretinimiento.html">Centro De Entretenimiento</a></li>
-                            <li><a class="dropdown-item" href="mobiliario.html">Mobiliario Y Mucho Más</a></li>
+                            <li><a class="dropdown-item" href="../categorias/cocinas.html">Cocinas</a></li>
+                            <li><a class="dropdown-item" href="../categorias/closet.html">Closets</a></li>
+                            <li><a class="dropdown-item" href="../categorias/escritorios.html">Escritorios</a></li>
+                            <li><a class="dropdown-item" href="../categorias/muebledebaño.html">Muebles De Baño</a></li>
+                            <li><a class="dropdown-item" href="../categorias/recepcion.html">Recepción</a></li>
+                            <li><a class="dropdown-item" href="../categorias/puertas.html">Puertas</a></li>
+                            <li><a class="dropdown-item" href="../categorias/entretinimiento.html">Centro De Entretenimiento</a></li>
+                            <li><a class="dropdown-item" href="../categorias/mobiliario.html">Mobiliario Y Mucho Más</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../sobre_nosotros.html">Sobre Nosotros</a></li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-5" type="search" placeholder="Buscar...">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Modal de Registro -->
     <div class="modal fade" id="RegistroModal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -110,7 +110,7 @@
 
                     <!-- Sección de imagen -->
                     <div class="col-md-6 modal-image">
-                        <img src="assets/images/nav/modal/modal-img.jpg" alt="Imagen de registro" class="img-fluid imagen-modal">
+                        <img src="../assets/images/nav/modal/modal-img.jpg" alt="Imagen de registro" class="img-fluid imagen-modal">
                     </div>
                 </div>
             </div>
@@ -126,9 +126,9 @@
                 <div class="row g-0">
                     <!-- Sección de imagen y avatar -->
                     <div class="col-md-6 p-0 position-relative">
-                        <img src="assets/images/nav/modal/modal-sesion.jpg" alt="Fondo de inicio de sesión" class="img-fluid imagen-fondo">
+                        <img src="../assets/images/nav/modal/modal-sesion.jpg" alt="Fondo de inicio de sesión" class="img-fluid imagen-fondo">
                         <div class="avatar-container">
-                            <img src="assets/images/nav/LOGO.png" alt="Avatar" class="avatar">
+                            <img src="../assets/images/nav/LOGO.png" alt="Avatar" class="avatar">
                         </div>
                     </div>
 
@@ -185,32 +185,32 @@
         </div>
     </div>
 
-
+<!----------------------- Categorias ------------------------->
     <main>
-        <h1 class="text-center my-5">Categorías Inmuebles</h1>
-        <div class="container mt-4">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 ">
-                <div class="col">
+        <h1 class="text-center mt-5">Categorías Inmuebles</h1>
+        <div class="container mt-4 mb-5">
+            <div class="row g-4 card-grid">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_Cocinas/Cocina.jpg" class="card-img-top rounded" alt="Cocina">
+                        <img src="../assets/images/categoria_Cocinas/Cocina.jpg" class="card-img-top rounded" alt="Cocina">
                         <div class="card-body d-flex flex-column justify-content-between ">
                             <br><h6 class="card-title fw-bold ">COCINAS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalCocinas">Ver</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center  h-100 p-5">
-                        <img src="assets/images/categoria_Closets/Closet5.jpg" class="card-img-top rounded" alt="Closet">
+                        <img src="../assets/images/categoria_Closets/Closet5.jpg" class="card-img-top rounded" alt="Closet">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">CLOSETS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalclosets">Ver</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center h-100 p-5 ">
-                        <img src="assets/images/categoria_escritorios/Escritorio4.jpg" class="card-img-top rounded" alt="Escritorio">
+                        <img src="../assets/images/categoria_escritorios/Escritorio4.jpg" class="card-img-top rounded" alt="Escritorio">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">ESCRITORIOS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalescritorios">Ver</button>
@@ -219,27 +219,27 @@
                 </div>
                 <br>
                 <br>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center  h-100 p-5">
-                        <img src="assets/images/categoria_Baño/Baño1.jpg" class="card-img-top rounded" alt="Muebles de baño">
+                        <img src="../assets/images/categoria_Baño/Baño1.jpg" class="card-img-top rounded" alt="Muebles de baño">
                         <div class="card-body d-flex flex-column justify-content-between">
-                            <h6 class="card-title fw-bold ">MUEBLES DE BAÑO</h6><br>
+                            <br><h6 class="card-title fw-bold ">MUEBLES DE BAÑO</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalbaños">Ver</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_recepcion/Recepcion1.jpg" class="card-img-top rounded" alt="Recepcion">
+                        <img src="../assets/images/categoria_recepcion/Recepcion1.jpg" class="card-img-top rounded" alt="Recepcion">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">RECEPCIÓN</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalrecepcion">Ver</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_puertas/Puerta2.jpg" class="card-img-top rounded" alt="Puertas">
+                        <img src="../assets/images/categoria_puertas/Puerta2.jpg" class="card-img-top rounded" alt="Puertas">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">PUERTAS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalpuertas">Ver</button>
@@ -247,18 +247,18 @@
                     </div>
                 </div>
                 <br>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" class="card-img-top rounded" alt="Centro de entretenimiento">
+                        <img src="../assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" class="card-img-top rounded" alt="Centro de entretenimiento">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold letter-spacing">CENTRO DE ENTRETENIMIENTO</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalentretenimiento">Ver</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" class="card-img-top rounded" alt="Mucho mas">
+                        <img src="../assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" class="card-img-top rounded" alt="Mucho mas">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold letter-spacing ">MUCHO MÁS </h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalmas">Ver</button>
@@ -270,10 +270,6 @@
     </main>
     <br>
 
-
-
-
-
     <!--------------------------- Modal de cada categoria ----------------------------->
 
     <!--------------------------- Modal categoria Cocina----------------------------->
@@ -283,20 +279,23 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Cocinas</h2>
+                <h1 class="text-center mb-5">Cocinas</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_Cocinas/Cocina.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_Cocinas/Cocina.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                    <p>
                     En Cocinas Valcucini diseñamos espacios funcionales y elegantes, 
                     optimizando cada rincón para mayor comodidad. Utilizamos melamina 
                     en muebles inferiores, módulos aéreos en cualquier color y encimeras 
                     de granito, sinterizado o cuarzón para garantizar durabilidad y estilo. 
                     Cada detalle combina almacenamiento práctico y diseño atemporal, 
                     convirtiendo la cocina en el corazón del hogar.
-                </p>
-                <form action="cocinas.html" method="get">
+                    </p>
+                </div>
+                
+                <form action="../categorias/cocinas.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -310,12 +309,13 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Closet</h2>
+                <h1 class="text-center mb-5">Closet</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_Closets/Closet5.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_Closets/Closet5.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                    <p>
                     En Cocinas Valcucini diseñamos closets que combinan elegancia, funcionalidad 
                     y organización para optimizar cualquier espacio. Utilizamos melamina en 
                     acabado mate con detalles en piedra o materiales sinterizados, ofreciendo 
@@ -324,8 +324,10 @@
                     ropa y almacenar accesorios, logrando una distribución inteligente. Ya sea un 
                     closet amplio o un diseño minimalista, creamos soluciones innovadoras y personalizadas 
                     que garantizan practicidad y armonía en cada ambiente.
-                </p>
-                <form action="closet.html" method="get">
+                    </p>
+                </div>
+                
+                <form action="../categorias/closet.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -337,20 +339,23 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Escritorio</h2>
+                <h1 class="text-center mb-5">Escritorio</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_escritorios/Escritorio4.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_escritorios/Escritorio4.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                   <p>
                     Los escritorios de Cocinas Valcucini combinan funcionalidad y diseño moderno
                      para crear espacios eficientes y elegantes. Utilizamos materiales de alta 
                      calidad como melamina, madera y superficies resistentes, garantizando durabilidad 
                      y un acabado sofisticado. Cada diseño está pensado para optimizar el espacio y
                       adaptarse a diferentes entornos laborales, integrando almacenamiento, áreas 
                       organizativas y soluciones ergonómicas que favorecen la productividad y el confort.
-                </p>
-                <form action="escritorios.html" method="get">
+                    </p> 
+                </div>
+                
+                <form action="../categorias/escritorios.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -363,12 +368,13 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Muebles de Baño</h2>
+                <h1 class="text-center mb-5">Muebles de Baño</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_Baño/Baño1.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_Baño/Baño1.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                    <p>
                     Los muebles de baño de Cocinas Valcucini combinan diseño y funcionalidad
                      para crear espacios elegantes, organizados y confortables. Cada pieza 
                      está fabricada con materiales de alta calidad, como melamina, madera y 
@@ -377,8 +383,9 @@
                       y adaptarse a diferentes estilos de baño, integrando soluciones de 
                       almacenamiento, detalles personalizados y acabados que reflejan la 
                       identidad de cada hogar o negocio.
-                </p>
-                <form action="muebledebaño.html" method="get">
+                    </p>
+                </div>
+                <form action="../categorias/muebledebaño.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -391,12 +398,13 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Recepcion</h2>
+                <h1 class="text-center mb-5">Recepcion</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_recepcion/Recepcion1.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_recepcion/Recepcion1.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                    <p>
                     Las recepciones de Cocinas Valcucini combinan elegancia y funcionalidad 
                     para ofrecer un ambiente acogedor y profesional desde el primer contacto. 
                     Diseñamos cada mostrador con materiales de alta calidad como melamina, 
@@ -404,8 +412,10 @@
                     sofisticado. Nuestros diseños están pensados para optimizar el espacio y 
                     adaptarse a diferentes entornos, integrando áreas de atención, almacenamiento
                      y detalles personalizados que reflejan la identidad de cada empresa.
-                </p>
-                <form action="recepcion.html" method="get">
+                    </p>
+                </div>
+                
+                <form action="../categorias/recepcion.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -418,12 +428,13 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Puertas</h2>
+                <h1 class="text-center mb-5">Puertas</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_puertas/Puerta2.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_puertas/Puerta2.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                    <p>
                     Las puertas de Cocinas Valcucini combinan elegancia y funcionalidad para 
                     brindar privacidad, estilo y durabilidad en cualquier espacio. Diseñamos 
                     cada puerta con materiales de alta calidad como melamina, madera y acabados 
@@ -431,8 +442,10 @@
                      Nuestros modelos están pensados para adaptarse a diferentes ambientes, desde 
                      hogares hasta oficinas, ofreciendo opciones con detalles personalizados, variedad 
                      de texturas y colores que reflejan la identidad y necesidades de cada cliente.
-                </p>
-                <form action="puertas.html" method="get">
+                    </p>
+                </div>
+                
+                <form action="../categorias/puertas.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -445,12 +458,13 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Centro de Entretenimiento</h2>
+                <h1 class="text-center mb-5">Centro de Entretenimiento</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                     <p>
                     Los centros de entretenimiento de Cocinas Valcucini combinan funcionalidad y
                     diseño elegante para crear espacios organizados y sofisticados. Utilizamos 
                     materiales de alta calidad como melamina, madera y superficies en mármol 
@@ -458,8 +472,10 @@
                     pensado para optimizar el espacio y adaptarse a diferentes estilos de hogar, 
                     integrando almacenamiento, áreas de exhibición y soluciones prácticas para 
                     la tecnología y la decoración.
-                </p>
-                <form action="entretinimiento.html" method="get">
+                    </p>
+                </div>
+               
+                <form action="../categorias/entretinimiento.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -472,19 +488,23 @@
             <div class="modal-content modal-content-cate"> <!-- Agregado modal-content -->
                 <button type="button" class="btn-close btn-close-cate m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- btn-close correcto -->
                 
-                <h2 class="text-center">Mucho mas</h2>
+                <h1 class="text-center mb-5">Mucho mas</h1>
                 
-                <div class="modal-image-cate">
-                    <img src="assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" alt="cocinas" class="img-fluid rounded">
+                <div class="modal-image-cate mb-5">
+                    <img src="../assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
-                <p>
+                <div class="descripcion-producto mb-2">
+                    <p>
                     En Cocinas Valcucini diseñamos y fabricamos mobiliario que equilibra estética, 
                     funcionalidad y calidad. Utilizamos materiales duraderos como melamina, metal y 
                     piedra para crear soluciones personalizadas que optimizan el almacenamiento y 
                     realzan cada espacio. Desde estanterías modulares hasta muebles con iluminación integrada, 
                     combinamos innovación y diseño sofisticado para transformar hogares, oficinas y 
                     comercios en entornos prácticos y elegantes.
-                <form action="muchomas.html" method="get">
+                    </p>
+                </div>
+                
+                <form action="../categorias/muchomas.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -494,36 +514,39 @@
     <!--------------------------- pie de pagina----------------------------->
 
     <footer>
-        <div class="container text-center">
+        <div class="container text-center py-3">
             <h5 class=" mt-5 mb-3">COCINAS VALCUCINI</h5>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="sobre_nosotros.html" class="text-dark">ACERCA DE NOSOTROS</a></li>
-                <li class="list-inline-item"><a href="categoria.html" class="text-dark">CATEGORÍAS</a></li>
-                <li class="list-inline-item"><a href="index.html" class="text-dark">INFORMACIÓN</a><li></li>
+                <li class="list-inline-item"><a href="sobre_nosotros.html" class="footer-link">ACERCA DE NOSOTROS</a></li>
+                <li class="list-inline-item"><a href="categoria.html" class="footer-link">CATEGORÍAS</a></li>
+                <li class="list-inline-item"><a href="index.html" class="footer-link">INFORMACIÓN</a><li></li>
+                
             </ul>
             <div class="my-3">
-                <a href="https://www.facebook.com/share/19MJMzzzCd/" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/valcucini_cocinas?igsh=MWtqa241NDF6cWt0dg==" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="https://wa.me/3124339001" class="text-dark mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/19MJMzzzCd/" class="footer-link mx-2" ><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/valcucini_cocinas?igsh=MWtqa241NDF6cWt0dg==" class="footer-link mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-link mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/3124339001" class="footer-link mx-2"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p class="small">
                 <strong>TÉRMINOS Y CONDICIONES</strong> | LÍNEA NACIONAL: 01 8000 230854 - BOGOTÁ: PBX 388 43 90 - HORARIO DE ATENCIÓN: LUN-SAB 7:00 A.M A 7:00 PM
                 <br>
                 NOTIFICACIONES: CARRERA 49 # 141 - 27, BOGOTÁ, COLOMBIA
                 <br>
-                <a href="mailto:contactenos@cocinasvalcucini.com" class="text-dark">CONTACTENOS@COCINASVALCUCINI.COM</a> | RAZÓN SOCIAL: COCINAS VALCUCINI S.A.S. | NIT: 7.168.725-1
+                <a href="mailto:contactenos@cocinasvalcucini.com" class="footer-link">CONTACTENOS@COCINASVALCUCINI.COM</a> | RAZÓN SOCIAL: COCINAS VALCUCINI S.A.S. | NIT: 7.168.725-1
                 <br>© 2025 TODOS LOS DERECHOS RESERVADOS
                 <br>
-                <a href="#" class="text-dark">SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</a>
+                <a href="#" class="footer-link">SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</a>
             </p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="assets/js/firebase-config.js"></script>
+
+
 
 </body>
 </html

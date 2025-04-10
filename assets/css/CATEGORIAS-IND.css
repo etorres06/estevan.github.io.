@@ -1,0 +1,75 @@
+body {
+    padding-top: 70px;
+    background-color: #bb9d85;
+    color: #0f0f0f;
+}
+
+
+
+
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h6{
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+/* /////////////////////////////////////CARDS //////////////////////////////////////////////*/
+/* Estructura de la tarjeta */
+.card {
+    background-color: #ebe3d8;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.15);    
+    box-shadow: 0px 0px 15px 5px #b89878 ;
+}
+
+/* Aumentar ligeramente el tamaño de la imagen en hover */
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Reducir el tamaño de las tarjetas inactivas */
+.card-grid:hover .card:not(:hover) {
+    transform: scale(0.9);
+}
+
+/* Aplicar el desenfoque, brillo y saturación a las imágenes inactivas */
+.card-grid:hover .card:not(:hover) .card-img-top {
+    filter: brightness(0.5) saturate(1.0) contrast(1.2) blur(2px);
+}
+
+.custom-button{
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+.custom-button:hover{
+    background-color: #287467bd;
+    box-shadow: 0px 0px 5px 2px white ;
+}
