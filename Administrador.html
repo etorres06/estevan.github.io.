@@ -1,158 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Administrador</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/administrador.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Administrador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/administrador.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="d-flex">
-        <!-- Sidebar -->
-        <div class="sidebar p-3 position-fixed w-25">
-            <h3 class="text-center">Admin</h3>
-            <a href="#">Inicio</a>
-            <a href="#gestion-productos">Gestión de Productos</a>
-            <a href="#portafolio">Portafolio</a>
-            <a href="#informes">Informes</a>
-            <a href="#configuracion">Configuración</a>
-            <a href="#">Cerrar Sesión</a>
-        </div>
-        
-        <!-- Contenido Principal -->
-        <div class="content w-75 ms-auto">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-4">
-                <span class="navbar-brand">Dashboard Administrador</span>
-            </nav>
-            
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Tarjetas de Resumen -->
-                    <div class="col-md-4">
-                        <div class="card text-white bg-primary mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Total de Productos</h5>
-                                <p class="card-text">150</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-white bg-success mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Reseñas Recientes</h5>
-                                <p class="card-text">35 Nuevas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-white bg-warning mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Visitas del Mes</h5>
-                                <p class="card-text">4,230</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Sección de Gestión de Productos -->
-                <div id="gestion-productos" class="mb-5">
-                    <h4>Gestión de Productos</h4>
-                    <button class="btn btn-primary mb-3">Añadir Producto</button>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Estado</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Producto Cocina1</td>
-                                <td>SI</td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm">Editar</button>
-                                    <button class="btn btn-danger btn-sm">Eliminar</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <!-- Sección de Portafolio -->
-                <div id="portafolio" class="mb-5">
-                    <h4>Portafolio</h4>
-                    <button class="btn btn-primary mb-3">Añadir Imagen</button>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Baño/Baño1.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Baño/Baño2.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Baño/Baño3.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet1.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet2.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet3.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet4.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet5.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet6.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Closets/Closet7.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Cocinas/Cocina1.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/categoria_Cocinas/Cocina2.jpg" class="img-fluid" alt="Portafolio">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Sección de Informes -->
-                <div id="informes" class="mb-5">
-                    <h4>Informes</h4>
-                    <p>Resumen de actividad y estadísticas.</p>
-                    <canvas id="chartVisitas"></canvas>
-                </div>
-                
-                <!-- Sección de Configuración -->
-                <div id="configuracion" class="mb-5">
-                    <h4>Configuración</h4>
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Nombre de Usuario</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <button class="btn btn-success">Guardar Cambios</button>
-                    </form>
-                </div>
+
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="admin-sidebar bg-dark text-white p-3">
+      <div class="sidebar-header text-center mb-4">
+        <h4 class="m-0 fw-bold">Valcucini</h4>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="admin-portafolio.html" class="nav-link text-white">Portafolio</a></li>
+        <li class="nav-item"><a href="admin-productos.html" class="nav-link text-white">Productos</a></li>
+        <li class="nav-item"><a href="admin-informes.html" class="nav-link text-white">Informes</a></li>
+        <li class="nav-item"><a href="admin-configuracion.html" class="nav-link text-white">Configuración</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido -->
+    <div class="content flex-grow-1 shifted">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-3 border-bottom">
+        <button id="toggleSidebar" class="btn btn-outline-dark me-3">☰</button>
+        <span class="navbar-brand fw-semibold fs-5">Panel de Administración</span>
+      </nav>
+
+      <main class="container-fluid py-4">
+        <h3 class="mb-4">Resumen General</h3>
+
+        <!-- Tarjetas informativas -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-3">
+            <div class="card stat-card shadow-sm border-0 h-100 text-white bg-primary">
+              <div class="card-body">
+                <h6 class="card-title">Usuarios Registrados</h6>
+                <p class="card-text fs-4 fw-bold">125</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card stat-card shadow-sm border-0 h-100 text-white bg-success">
+              <div class="card-body">
+                <h6 class="card-title">Cotizaciones Realizadas</h6>
+                <p class="card-text fs-4 fw-bold">48</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card stat-card shadow-sm border-0 h-100 text-white bg-warning">
+              <div class="card-body">
+                <h6 class="card-title">Consultas de Contacto</h6>
+                <p class="card-text fs-4 fw-bold">32</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card stat-card shadow-sm border-0 h-100 text-white bg-danger">
+              <div class="card-body">
+                <h6 class="card-title">Visitas del Mes</h6>
+                <p class="card-text fs-4 fw-bold">4,230</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Gráfica de visitas -->
+        <section class="mb-5">
+          <h4 class="mb-3">Actividad Mensual del Sitio</h4>
+          <canvas id="chartVisitas" height="100"></canvas>
+        </section>
+
+        <!-- Últimas acciones recientes -->
+        <section>
+          <h4 class="mb-3">Últimas Acciones</h4>
+          <ul class="list-group shadow-sm">
+            <li class="list-group-item">Stefania agregó una nueva imagen al portafolio</li>
+            <li class="list-group-item">Estevan actualizó datos del usuario #56</li>
+            <li class="list-group-item">Camila respondió una consulta de contacto</li>
+            <li class="list-group-item">Sara subió nuevos productos en categoría Baños</li>
+          </ul>
+        </section>
+      </main>
     </div>
-    
-    <script src="assets/js/admin.js"></script>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+    const content = document.querySelector('.content');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+      content.classList.toggle('shifted');
+    });
+
+    // Ejemplo simple para gráfico
+    new Chart(document.getElementById("chartVisitas"), {
+      type: "line",
+      data: {
+        labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun"],
+        datasets: [{
+          label: "Visitas",
+          data: [1200, 1900, 3000, 2500, 3200, 4000],
+          fill: true,
+          borderColor: "#0d6efd",
+          backgroundColor: "rgba(13,110,253,0.1)",
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bb9d85;
+    color: #0f0f0f;
+    padding-top: 200px;
+}
+
+/* Estilos generales del navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #faf8eb5e; /* Translucidez inicial */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
+    
+}
+.nav-link:hover {
+    color: #ffffff;
+}
+.navbar.scrolled {
+    background-color: #A67B5B; /* Color madera al hacer scroll */
+}
+
+.navbar-nav.me-auto {
+    font-size: 20px;
+}
+
+/* Ajustes para el navbar cuando colapsa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    padding: 10px;
+}
+
+
+.btn-brown {
+    background-color: #A67C52;
+    color: white;
+    border: none;
+}
+
+.btn-brown:hover {
+    background-color: #8B5E3B;
+}
+
+.btn-outline-brown {
+    border: 2px solid #A67C52;
+    color: #A67C52;
+}
+
+.btn-outline-brown:hover {
+    background-color: #A67C52;
+    color: white;
+}
+
+/* DROPDOWN0 */
+.dropdown-menu {
+    background: #FAF8EB;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* ///////////////////modal //////////////////////// */
+.modal-dialog {
+    max-width: 60%;
+    width: 90%;
+}
+
+.modal-content {
+    display: flex;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
+    padding: 20px;
+    border: none;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.modal-content:hover {
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.651);
+}
+
+.modal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-modal {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    animation: flotante 3s infinite ease-in-out;
+}
+
+@keyframes flotante {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* Estilos del modal */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Contenedor de la imagen con opacidad */
+.imagen-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+/* Capa oscura encima de la imagen */
+.imagen-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Ajusta el nivel de oscuridad */
+}
+
+/* Contenedor del avatar */
+.avatar-container {
+    position: absolute;
+    top: 52%;
+    left: 51%;
+    background-color: #FAF8EB;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar */
+.avatar {
+    width: 100%;
+
+    border-radius: 5%;
+}
+
+/* Estilo de los campos de entrada */
+.input-group-text {
+    background: white;
+    border-right: none;
+}
+
+.form-control {
+    border-left: none;
+}
+
+/* Botón de inicio de sesión */
+.btn-primary {
+    background-color: #2c3e50;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1a252f;
+}
+.bg-brown {
+    background-color: white !important;
+}
+
+
+  .content {
+    text-align: center;
+    padding: 60px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  button#mostrarFormulario {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #8b5e3b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button#mostrarFormulario:hover {
+    background-color: #a67b5b;
+  }
+  
+  form {
+    text-align: left;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+  }
+  
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .checkbox-group {
+    margin-top: 15px;
+  }
+  
+  .checkbox-group label {
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+  
+  form button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2ecc71;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  .formulario-oculto {
+    display: none;
+  }
+  
+
+footer a {
+    text-decoration: none;
+}
+
+footer .list-inline-item {
+    margin: 15 10px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+
+main {
+    flex: 1; /* Esto empuja el footer hacia abajo */
+}
+
+footer {
+    background-color: #8b5e3c; /* Verde menta */
+    color: black; /* Cambiar color del texto si es necesario */
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #654321; /* Un tono más oscuro al pasar el cursor */
+}

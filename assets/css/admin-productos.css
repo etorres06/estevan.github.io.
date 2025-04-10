@@ -1,0 +1,37 @@
+/* Sidebar */
+.admin-sidebar {
+    width: 250px;
+    min-height: 100vh;
+    transition: width 0.3s ease;
+  }
+  
+  .admin-sidebar.collapsed {
+    width: 70px;
+  }
+  
+  .admin-sidebar .nav-link {
+    font-size: 0.95rem;
+  }
+  
+  .admin-sidebar .nav-link.active {
+    font-weight: bold;
+    background-color: #495057;
+    border-radius: 5px;
+  }
+  
+  /* Contenido al colapsar sidebar */
+  .content.shifted {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .admin-sidebar.collapsed + .content.shifted {
+    margin-left: 70px;
+  }
+  
+  /* Imagen de producto */
+  .img-sm {
+    width: 60px;
+    height: auto;
+  }
+  

@@ -1,0 +1,46 @@
+body {
+    background-color: #fdfcfb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: #5a4033;
+}
+
+.card {
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.bg-productos {
+    background-color: #6c9a8b;
+}
+
+.bg-usuarios {
+    background-color: #8d6e63;
+}
+
+.bg-cotizaciones {
+    background-color: #5d737e;
+}
+
+.bg-reseñas {
+    background-color: #aa6f73;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.fs-2 {
+    font-weight: bold;
+}
+
+hr {
+    border-color: #d3c0b0;
+}
