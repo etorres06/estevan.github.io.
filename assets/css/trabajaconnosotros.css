@@ -1,0 +1,111 @@
+.content {
+    margin: 130px auto 50px auto; /* lo baja del nav fijo y le da margen abajo */
+    padding: 40px 20px;
+    max-width: 800px;
+    background: linear-gradient(145deg, #f7f7f7, #ffffff);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Títulos */
+.content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Botón de mostrar formulario */
+button#mostrarFormulario {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #8b5e3b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#mostrarFormulario:hover {
+    background-color: #a67b5b;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Etiquetas */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs, selects y textarea */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #8b5e3b;
+    outline: none;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Botón de enviar */
+form button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #2ecc71;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Ocultar formulario por defecto */
+.formulario-oculto {
+    display: none;
+}
