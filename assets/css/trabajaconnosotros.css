@@ -1,89 +1,94 @@
-.content {
-    text-align: center;
-    padding: 60px 30px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  button#mostrarFormulario {
-    padding: 12px 20px;
-    font-size: 18px;
-    background-color: #8b5e3b;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  button#mostrarFormulario:hover {
-    background-color: #a67b5b;
-  }
-  
-  form {
-    text-align: left;
-    margin-top: 40px;
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 30px;
-    border-radius: 10px;
-    backdrop-filter: blur(8px);
-  }
-  
-  form label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  
-  form input,
-  form select,
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .checkbox-group {
-    margin-top: 15px;
-  }
-  
-  .checkbox-group label {
-    display: block;
-    margin-top: 5px;
-    font-weight: normal;
-  }
-  
-  form button[type="submit"] {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #2ecc71;
-    border: none;
-    padding: 12px;
-    font-size: 18px;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  form button[type="submit"]:hover {
-    background-color: #27ae60;
-  }
-  
-  .formulario-oculto {
-    display: none;
-  }
+.content-trabajo {
+  text-align: center;
+  padding: 40px 30px;
+  max-width: 700px;
+  margin: 120px auto 80px auto;  /* ⬅️ Espacio superior e inferior */
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+.content-trabajo h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-trabajo p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.content-trabajo button#mostrarFormulario {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #8b5e3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.content-trabajo button#mostrarFormulario:hover {
+  background-color: #a67b5b;
+}
+
+.content-trabajo form {
+  text-align: left;
+  margin-top: 40px;
+  background-color: rgba(139, 94, 59, 0.8); /* Marrón suave con transparencia */
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.content-trabajo form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #fff; /* Letras claras para fondo oscuro */
+}
+
+.content-trabajo form input,
+.content-trabajo form select,
+.content-trabajo form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.95); /* Inputs claros sobre fondo oscuro */
+  color: #333;
+}
+
+.content-trabajo .checkbox-group {
+  margin-top: 15px;
+}
+
+.content-trabajo .checkbox-group label {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.content-trabajo form button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #2ecc71;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.content-trabajo form button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+.content-trabajo .formulario-oculto {
+  display: none;
+}

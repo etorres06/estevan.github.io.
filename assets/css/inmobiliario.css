@@ -5,6 +5,7 @@ body {
 }
 
 
+
 /*///////////////////////////////////////// letra /////////////////////////////////////////////*/
 
 h1{
@@ -92,12 +93,7 @@ button{
     margin: auto;
 }
 
-/* Cerrar botón */
-.btn-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+
 
 /* Contenedor de la imagen */
 .modal-image-cate {
@@ -174,7 +170,5 @@ button{
     border: none;
     font-size: 1.2rem;
 }
-
-
 
 

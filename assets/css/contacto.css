@@ -1,14 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #A67B5B;
-    height: 100vh;
+    background-color: #bb9d85;
+    color: #4A4A4A;
     padding-top: 100px;
 }
+
+/* //////////////////////////////////////////letra ////////////////////////////////////////////// */
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+
 
 /****************contactanos *******************/
 
 .avatar2 {
-    width: 1000px; /* Aumenta el ancho */
+    width: 100%; 
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -101,6 +118,12 @@ aside {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .avatar2 {
+        height: 105%;
     }
 }
 

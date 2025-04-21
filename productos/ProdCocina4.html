@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../assets/css/navstyle.css">
     <link rel="stylesheet" href="../assets/css/footerstyle.css">
     <link rel="stylesheet" href="../assets/css/produc1.css">
+    <link rel="stylesheet" href="../assets/css/reseñas.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
@@ -190,7 +191,7 @@
                 <aside class="col-12 col-xl-6 d-flex justify-content-center mb-4">
                     <div class="pixelated-image-card">
                         <img src="../assets/images/categoria_Cocinas/Cocina4.jpg" alt="Producto" class="pixelated-image top-image">
-                        <img src="../assets/images/logo_productos.png" alt="logo" class="pixelated-image bottom-image">
+                        <img src="../assets/images/Productos/logo_productos.png" alt="logo" class="pixelated-image bottom-image">
                     </div>
                 </aside>
 
@@ -204,7 +205,7 @@
                             <li><strong>Colores:</strong> Marrón oscuro en muebles, mesón en beige claro.</li>
                         </ul>
 
-                        <p class="calificacion">⭐⭐⭐⭐⭐</p>
+                        
                         <div class="specs">
                             <h3>Especificaciones principales</h3>
                             <ul>
@@ -215,8 +216,18 @@
                             <!-- Botón para abrir el modal de contacto -->
                             <button type="button" class="btn btn-formu" data-bs-toggle="modal" data-bs-target="#modalLoginRequired">
                                 Realiza tu cotización
+                            <button class="btn btn-outline-light btn-opinion ms-2" data-bs-toggle="modal" data-bs-target="#modalResena">
+                                Escribir una opinión
                             </button>
-                              
+                        </div>
+                        <div class="w-100 mt-4">
+                            <h3 class="my-3 text-start text-withe text-roboto-slab">Opiniones de nuestros clientes</h3>
+                            <div class="contenedor-resenas" id="listaResenas"></div>
+                        </div>
+                    </div>
+                </article>
+            </div> 
+        </div>               
                               
             
                             <!-- Modal de Alerta de Inicio de Sesión -->
@@ -275,5 +286,8 @@
     </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+<script type="module" src="../assets/js/firebase-config.js"></script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+/* === CONTENEDOR DE RESEÑAS === */
+.contenedor-resenas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .contenedor-resenas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .contenedor-resenas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-resenas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === TARJETA DE RESEÑA === */
+.review-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-family: 'Manrope', sans-serif;
+}
+
+.avatar {
+  background-color: #287467bd; /* verde menta */
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* === ESTRELLAS INTERACTIVAS === */
+.estrella {
+  font-size: 1.6rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.estrella.text-warning {
+  color: #f7c10a !important;
+}
+
+/* === TEXTO DE LA RESEÑA === */
+.review-card .fw-semibold {
+  font-weight: 600;
+}
+
+.review-card .text-secondary {
+  font-size: 0.9rem;
+}
+
+/* === FUENTES === */
+.text-roboto-slab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.text-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* === BOTÓN MENTA === */
+.btn-mint {
+  background-color: #287467bd; /* verde menta */
+  color: #fff;
+  border: 2px solid #287467bd; /* borde más oscuro que el fondo */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-mint:hover {
+  background-color: #287467bd;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* === ANIMACIÓN DE MODAL === */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal.fade .modal-dialog {
+  animation: popIn 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* === INPUTS CON BRILLO MENTA === */
+.form-control {
+  border: 1px solid #287467bd;
+  box-shadow: 0 0 5px #287467bd;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #287467bd;
+  box-shadow: 0 0 8px #287467bd;
+}

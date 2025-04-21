@@ -83,18 +83,3 @@ window.loginWithGoogle = function() {
 window.registerWithGoogle = function() {
     loginWithGoogle(); // Usa la misma función para registro
 };
-
-
-// Función para recuperar contraseña
-document.getElementById("resetPasswordForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const email = document.getElementById("resetEmail").value;
-
-    sendPasswordResetEmail(auth, email)
-        .then(() => {
-            alert("Correo de recuperación enviado.");
-        })
-        .catch((error) => {
-            alert("Error al recuperar contraseña: " + error.message);
-        });
-});

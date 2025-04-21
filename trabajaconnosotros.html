@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="assets/css/trabajaconnosotros.css">
 
 
-    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
@@ -186,64 +185,83 @@
             </div>
         </div>
     </div>
-    <section class="content">
+
+    <section class="content-trabajo">
         <h2>🛠️ Trabaja con Nosotros</h2>
         <p>¿Apasionado por el diseño, la carpintería o el mobiliario personalizado? En <strong>Cocinas Valcucini</strong>, buscamos personas creativas y comprometidas. ¡Postula ahora y sé parte de nuestro equipo!</p>
-
-        <button id="mostrarFormulario">📩 Envíanos tu hoja de vida</button>
-
-        <form id="formularioTrabajo" class="formulario-oculto" action="ruta-para-enviar-formulario.php" method="POST" enctype="multipart/form-data">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="telefono">Teléfono / WhatsApp:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="cargo">Cargo al que postulas:</label>
-        <select id="cargo" name="cargo" required>
-            <option value="">-- Selecciona una opción --</option>
-            <option value="carpintero">Carpintero</option>
-            <option value="instalador">Instalador</option>
-            <option value="disenador">Diseñador de interiores</option>
-            <option value="asesor">Asesor comercial</option>
-        </select>
-
-        <label for="ciudad">Ciudad de residencia:</label>
-        <input type="text" id="ciudad" name="ciudad" required>
-
-        <label for="experiencia">Experiencia (breve descripción):</label>
-        <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
-
-        <label for="archivo">Adjuntar CV o Portafolio (PDF / Imágenes):</label>
-        <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.jpeg,.png" required>
-
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="herramientas"> Dispongo de herramientas propias</label>
-            <label><input type="checkbox" name="transporte"> Dispongo de transporte propio</label>
+    
+        <!-- Botón que abre el modal -->
+        <button id="mostrarFormulario" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLoginRequired">
+            📩 Envíanos tu hoja de vida
+        </button>
+    
+        <!-- Modal de Alerta de Inicio de Sesión -->
+        <div class="modal fade" id="modalLoginRequired" tabindex="-1" aria-labelledby="modalLoginRequiredLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-attention">
+                <div class="modal-content border border-warning shadow-lg">
+                    <div class="modal-header bg-warning text-white">
+                        <h5 class="modal-title" id="modalLoginRequiredLabel">Atención</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        Debes iniciar sesión para poder contactarnos.
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btnLogin" type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
+                            Iniciar Sesión
+                        </button>
+                        <button id="btnClose" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <button type="submit">Enviar solicitud</button>
+    
+        <!-- Formulario de trabajo: solo visible si está logueado -->
+        <form id="formularioTrabajo" class="formulario-oculto" action="ruta-para-enviar-formulario.php" method="POST" enctype="multipart/form-data">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="telefono">Teléfono / WhatsApp:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+    
+            <label for="registroEmail">Correo electrónico:</label>
+            <input type="email" class="form-control" id="registroEmail" placeholder="Correo electrónico" required>
+    
+            <label for="cargo">Cargo al que postulas:</label>
+            <select id="cargo" name="cargo" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="carpintero">Carpintero</option>
+                <option value="instalador">Instalador</option>
+                <option value="disenador">Diseñador de interiores</option>
+                <option value="asesor">Asesor comercial</option>
+            </select>
+    
+            <label for="ciudad">Ciudad de residencia:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+    
+            <label for="experiencia">Experiencia (breve descripción):</label>
+            <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+    
+            <label for="archivo">Adjuntar CV o Portafolio (PDF / Imágenes):</label>
+            <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.jpeg,.png" required>
+    
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="herramientas"> Dispongo de herramientas propias</label>
+                <label><input type="checkbox" name="transporte"> Dispongo de transporte propio</label>
+            </div>
+    
+            <button type="submit">Enviar solicitud</button>
         </form>
     </section>
 
-    <script>
-        document.getElementById("mostrarFormulario").addEventListener("click", function () {
-        document.getElementById("formularioTrabajo").classList.toggle("formulario-oculto");
-        });
-    </script>
-
-    
-        <footer>
+    <footer>
         <div class="container text-center py-3">
             <h5 class=" mt-5 mb-3">COCINAS VALCUCINI</h5>
-            <ul class="list-inline">
+                <ul class="list-inline">
                 <li class="list-inline-item"><a href="sobre_nosotros.html" class="footer-link">ACERCA DE NOSOTROS</a></li>
                 <li class="list-inline-item"><a href="categoria.html" class="footer-link">CATEGORÍAS</a></li>
                 <li class="list-inline-item"><a href="index.html" class="footer-link">INFORMACIÓN</a><li></li>
-                
+                    
             </ul>
             <div class="my-3">
                 <a href="https://www.facebook.com/share/19MJMzzzCd/" class="footer-link mx-2" ><i class="fab fa-facebook-f"></i></a>
@@ -263,5 +281,11 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script type="module" src="assets/js/firebase-config.js"></script>
 </body>
 </html>
