@@ -71,13 +71,28 @@ button{
   }
 
   /* Imagen con efecto de aparición */
-.carousel-image {
-    max-width: 100%;
-    height: auto;
+  .carousel-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
     border-radius: 15px;
-    transform: scale(0.8);
     animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
-}
+  }
+  
+  /* Pantallas medianas en adelante */
+  @media (min-width: 800px) {
+    .carousel-image {
+      max-height: 400px;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 1200px) {
+    .carousel-image {
+      max-height: 600px;
+    }
+  }
+  
 
 /* Animación de la imagen */
 @keyframes fadeInImage {
@@ -91,13 +106,15 @@ button{
     }
 }
 
-/*///////////// carrucel ////////////////////*/
 
+
+
+/*///////////// carrucel ////////////////////*/
 .carousel-inner img {
-    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
-    height: 700px;  /* Ajusta la altura deseada */
-      /* Recorta la imagen para llenar el contenedor sin deformarse */
+    width: 100%;
+    height: 700px;
 }
+
 .carousel-caption {
     position: absolute;
     top: 90%;
@@ -109,6 +126,37 @@ button{
     width: auto;
     height: auto;
 }
+
+.btn-brown {
+    background-color: #8B5A2B;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-brown:hover {
+    background-color: #287467bd;
+    border-color: #51dfcc;
+}
+
+.shadow-custom {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ///// Ajustes para pantallas pequeñas ///// */
+@media (max-width: 768px) {
+    .carousel-inner img,
+    .img-fix {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+
+/*///////////// Opiniones ////////////////////*/
+
 #testimonios blockquote {
     font-size: 1.2rem;
     font-style: italic;
@@ -125,96 +173,22 @@ button{
 .carousel-control-next-icon {
     filter: invert(30%);
 }
-#acerca img {
-    max-height: 400px; /* Imagen más grande */
-    object-fit: cover;
-    border-radius: 10px; /* Bordes suaves */;
-}
-
-.btn-brown {
-    background-color: #8B5A2B;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.btn-brown:hover {
-    background-color: #287467bd;
-    border-color: #51dfcc;
-}
-.shadow-custom {
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3) !important;
-}
-.rousel-inner img {
-    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
-    height: 700px;  /* Ajusta la altura deseada */
-      /* Recorta la imagen para llenar el contenedor sin deformarse */
-}
-.bg-menta {
-    background-color: #ffffff !important; /* Verde menta */
-    color: rgba(0, 0, 0, 0.596) !important; /* Texto en blanco */
-}
-.bg-custom {
-    background-color: #ffffff !important;
-}
-#best-sellers {
-    text-align: center;
-}
-.carousel-inner {
-    justify-content: center;
-    align-items: center;
-}
-.carousel-item .d-flex {
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.product {
-    width: 30%; /* Ajusta el tamaño según lo necesites */
-    aspect-ratio: 1 / 1; /* Mantiene el contenedor cuadrado */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px; /* Bordes opcionales */
-    overflow: hidden; /* Evita que las imágenes sobresalgan */
-    background-color: #f8f8f8; /* Fondo opcional */
-    position: relative; /* Para mejor control interno */
-    margin: 8px;
-}
-
-.product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.zoom-effect:hover {
-    transform: scale(1.1);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-}
 
 
-
-/*///////////// mas vendidos ////////////////////*/
+/*///////////// más vendidos ////////////////////*/
 .product.card {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     background-color: #fff;
-    width: 300px;
-    height: 320px; /* Altura uniforme para todas */
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    height: 100%; /* Esto ayuda a que todas las tarjetas se alineen bien */
+    /* width eliminado para diseño responsivo */
 }
 
 .product.card:hover {
@@ -222,10 +196,10 @@ button{
 }
 
 .product.card img.card-img-top {
-    height: 220px;               /* Altura fija para todas las imágenes */
+    height: 220px;
     width: 100%;
-    object-fit: cover;           /* Recorta sin deformar */
-    object-position: center;     /* Centra la imagen */
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -250,5 +224,21 @@ button{
 }
 
 
+/* Estilo general para flechas de "Más Vendidos" */
+/* izquierda" */
+#carouselvendidos .carousel-control-prev-icon {
+    filter: invert(1);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    border-radius: 50%;
+    padding: 0.5rem;
+    right: 0.25rem;
+}
 
+/* derecha" */
+#carouselvendidos .carousel-control-next-icon {
+    filter: invert(1);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
 
