@@ -13,177 +13,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
  
-    <link rel="stylesheet" href="assets/css/navstyle.css">
-    <link rel="stylesheet" href="assets/css/footerstyle.css">
-    <link rel="stylesheet" href="assets/css/inmobiliario.css">
+    <link rel="stylesheet" href="../assets/css/navstyle.css">
+    <link rel="stylesheet" href="../assets/css/footerstyle.css">
+    <link rel="stylesheet" href="../assets/css/inmobiliario.css">
+    <link rel="stylesheet" href="../assets/css/nav-usuario-style.css">
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand ps-4" href="#" >
-                <img src="assets/images/nav/LOGO.png" width="130px" alt="Valcucini" class="logo">
+                <img src="../assets/images/nav/LOGO.png" width="130px" alt="Valcucini" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../cliente.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">Mobiliario</a>
+                        <a class="nav-link dropdown-toggle" href="../usuarios/categoria-usuario.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">Mobiliario</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="categorias/cocinas.html">Cocinas</a></li>
-                            <li><a class="dropdown-item" href="categorias/closet.html">Closets</a></li>
-                            <li><a class="dropdown-item" href="categorias/escritorios.html">Escritorios</a></li>
-                            <li><a class="dropdown-item" href="categorias/muebledebaño.html">Muebles De Baño</a></li>
-                            <li><a class="dropdown-item" href="categorias/recepcion.html">Recepción</a></li>
-                            <li><a class="dropdown-item" href="categorias/puertas.html">Puertas</a></li>
-                            <li><a class="dropdown-item" href="categorias/entretinimiento.html">Centro De Entretenimiento</a></li>
-                            <li><a class="dropdown-item" href="categorias/mobiliario.html">Mobiliario Y Mucho Más</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/cocinas.html">Cocinas</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/closet.html">Closets</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/escritorios.html">Escritorios</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/muebledebaño.html">Muebles De Baño</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/recepcion.html">Recepción</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/puertas.html">Puertas</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/entretinimiento.html">Centro De Entretenimiento</a></li>
+                            <li><a class="dropdown-item" href="../usuarios/categorias-usuario/mobiliario.html">Mobiliario Y Mucho Más</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trabajaconnosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../usuarios/contacto-usuario.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../usuarios/sobre_nosotros -usuario.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../usuarios/trabajaconnosotrosusuario.html">Trabaja Con Nosotros</a></li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-5" type="search" placeholder="Buscar...">
                 </form>
-                <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#RegistroModal">
-                    <i class="bi bi-person-circle fa-2x"></i>
-                </a> 
+                <div class="dropdown user-dropdown">
+                    <a href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle fs-3" style="color: black;"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../usuarios/mi-cuenta.html">MI CUENTA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item logout" href="../index.html">SALIR</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-        <!-- Modal de Registro -->
-        <div class="modal fade" id="RegistroModal" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="row g-0">
-                        <!-- Sección de formulario -->
-                        <div class="col-md-6 d-flex flex-column justify-content-center p-4">
-                            <!-- Botón de cierre -->
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-    
-                            <!-- Título -->
-                            <h2 class="fw-bold text-center text-success">Registrarse</h2>
-                            <p class="text-muted text-center">Por favor, ingresa tus datos</p>
-    
-                            <!-- Formulario -->
-                            <form id="registroForm">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Nombre" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Apellido" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" id="registroEmail" placeholder="Correo electrónico" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" id="registroPassword" placeholder="Contraseña" required>
-                                </div>
-    
-                                <div class="form-check mb-3">
-                                    <input type="checkbox" class="form-check-input" id="not-robot" required>
-                                    <label class="form-check-label" for="not-robot">No soy un robot</label>
-                                </div>
-    
-                                <button type="submit" class="btn btn-dark w-100">Registrarse</button>
-                            </form>
-    
-                            <!-- Separador -->
-                            <div class="text-center my-3">o</div>
-    
-                            <!-- Botón Google -->
-                            <button class="btn text-dark  btn-outline-light w-100 border" onclick="registerWithGoogle()">
-                                <i class="bi bi-google"></i> Registrarse con Google
-                            </button>
-    
-                            <!-- Enlace para iniciar sesión -->
-                            <p class="mt-3 text-muted text-center">
-                                ¿Ya tienes una cuenta?
-                                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#LoginModal">Iniciar sesión</a>
-                            </p>
-                        </div>
-    
-                        <!-- Sección de imagen -->
-                        <div class="col-md-6 modal-image">
-                            <img src="assets/images/nav/modal/modal-img.jpg" alt="Imagen de registro" class="img-fluid imagen-modal">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            
-    
-        <!-- Modal de Inicio de Sesión -->
-        <div class="modal fade" id="LoginModal" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content text-center">
-                    <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    <div class="row g-0">
-                        <!-- Sección de imagen y avatar -->
-                        <div class="col-md-6 p-0 position-relative">
-                            <img src="assets/images/nav/modal/modal-sesion.jpg" alt="Fondo de inicio de sesión" class="img-fluid imagen-fondo">
-                            <div class="avatar-container">
-                                <img src="assets/images/nav/LOGO.png" alt="Avatar" class="avatar">
-                            </div>
-                        </div>
-    
-                        <!-- Sección de formulario -->
-                        <div class="col-md-6 d-flex flex-column justify-content-center p-4">
-                            <h2 class="fw-bold text-success">¡Bienvenido de nuevo!</h2>
-                            <p class="text-muted">Inicia sesión en tu cuenta</p>
-    
-                            <!-- Formulario de inicio de sesión -->
-                            <form id="loginForm">
-                                <div class="mb-3 input-group">
-                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                    <input type="email" id="loginEmail" class="form-control" placeholder="Correo electrónico" required>
-                                </div>
-                                <div class="mb-3 input-group">
-                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                    <input type="password" id="loginPassword" class="form-control" placeholder="Contraseña" required>
-                                </div>
-                                <button type="submit" class="btn btn-dark w-100">Iniciar Sesión</button>
-    
-                                <div class="text-center my-3">o</div>
-    
-                                <button class="btn text-dark btn-outline-light w-100 border" onclick="loginWithGoogle()">
-                                    <i class="bi bi-google"></i> Continuar con Google
-                                </button>
-    
-                                <p class="mt-3">
-                                    <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#ResetPasswordModal">Olvidé mi contraseña</a>
-                                </p>
-                            </form>
-    
-                            <p class="mt-3 text-muted">
-                                ¿No tienes una cuenta? <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#RegistroModal">Regístrate</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Modal de Restablecimiento de Contraseña -->
-        <div class="modal fade" id="ResetPasswordModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content text-center">
-                    <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    <h2 class="fw-bold text-success">Recuperar Contraseña</h2>
-                    <form id="resetPasswordForm">
-                        <div class="mb-3">
-                            <input type="email" id="resetEmail" class="form-control" placeholder="Correo electrónico" required>
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100">Enviar Enlace</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        
     
 <!----------------------- Categorias ------------------------->
     <main>
@@ -192,7 +73,7 @@
             <div class="row g-4 card-grid">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_Cocinas/Cocina.jpg" class="card-img-top rounded img-fix" alt="Cocina">
+                        <img src="../assets/images/categoria_Cocinas/Cocina.jpg" class="card-img-top rounded img-fix" alt="Cocina">
                         <div class="card-body d-flex flex-column justify-content-between ">
                             <br><h6 class="card-title fw-bold ">COCINAS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalCocinas">Ver</button>
@@ -201,7 +82,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center  h-100 p-5">
-                        <img src="assets/images/categoria_Closets/Closet5.jpg" class="card-img-top rounded img-fix" alt="Closet">
+                        <img src="../assets/images/categoria_Closets/Closet5.jpg" class="card-img-top rounded img-fix" alt="Closet">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">CLOSETS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalclosets">Ver</button>
@@ -210,7 +91,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center h-100 p-5 ">
-                        <img src="assets/images/categoria_escritorios/Escritorio4.jpg" class="card-img-top rounded img-fix" alt="Escritorio">
+                        <img src="../assets/images/categoria_escritorios/Escritorio4.jpg" class="card-img-top rounded img-fix" alt="Escritorio">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">ESCRITORIOS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalescritorios">Ver</button>
@@ -221,7 +102,7 @@
                 <br>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center  h-100 p-5">
-                        <img src="assets/images/categoria_Baño/Baño1.jpg" class="card-img-top rounded img-fix" alt="Muebles de baño">
+                        <img src="../assets/images/categoria_Baño/Baño1.jpg" class="card-img-top rounded img-fix" alt="Muebles de baño">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">MUEBLES DE BAÑO</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalbaños">Ver</button>
@@ -230,7 +111,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_recepcion/Recepcion1.jpg" class="card-img-top rounded img-fix" alt="Recepcion">
+                        <img src="../assets/images/categoria_recepcion/Recepcion1.jpg" class="card-img-top rounded img-fix" alt="Recepcion">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">RECEPCIÓN</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalrecepcion">Ver</button>
@@ -239,7 +120,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_puertas/Puerta2.jpg" class="card-img-top rounded img-fix" alt="Puertas">
+                        <img src="../assets/images/categoria_puertas/Puerta2.jpg" class="card-img-top rounded img-fix" alt="Puertas">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold ">PUERTAS</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalpuertas">Ver</button>
@@ -249,7 +130,7 @@
                 <br>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" class="card-img-top rounded img-fix" alt="Centro de entretenimiento">
+                        <img src="../assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" class="card-img-top rounded img-fix" alt="Centro de entretenimiento">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold letter-spacing">CENTRO DE ENTRETENIMIENTO</h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalentretenimiento">Ver</button>
@@ -258,7 +139,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card text-center h-100 p-5">
-                        <img src="assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" class="card-img-top rounded img-fix" alt="Mucho mas">
+                        <img src="../assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" class="card-img-top rounded img-fix" alt="Mucho mas">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <br><h6 class="card-title fw-bold letter-spacing ">MUCHO MÁS </h6><br>
                             <button class="custom-button" data-bs-toggle="modal" data-bs-target="#modalmas">Ver</button>
@@ -282,7 +163,7 @@
                 <h1 class="text-center mb-5">Cocinas</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_Cocinas/Cocina.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_Cocinas/Cocina.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                     <p>
@@ -295,7 +176,7 @@
                     </p>
                 </div>
                 
-                <form action="categorias/cocinas.html" method="get">
+                <form action="../usuarios/categorias-usuario/cocinas.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -312,7 +193,7 @@
                 <h1 class="text-center mb-5">Closet</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_Closets/Closet5.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_Closets/Closet5.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                     <p>
@@ -327,7 +208,7 @@
                     </p>
                 </div>
                 
-                <form action="categorias/closet.html" method="get">
+                <form action="../usuarios/categorias-usuario/closet.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -342,7 +223,7 @@
                 <h1 class="text-center mb-5">Escritorio</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_escritorios/Escritorio4.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_escritorios/Escritorio4.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                    <p>
@@ -355,7 +236,7 @@
                     </p> 
                 </div>
                 
-                <form action="categorias/escritorios.html" method="get">
+                <form action="../usuarios/categorias-usuario/escritorios.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -371,7 +252,7 @@
                 <h1 class="text-center mb-5">Muebles de Baño</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_Baño/Baño1.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_Baño/Baño1.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                     <p>
@@ -385,7 +266,7 @@
                       identidad de cada hogar o negocio.
                     </p>
                 </div>
-                <form action="categorias/muebledebaño.html" method="get">
+                <form action="../usuarios/categorias-usuario/muebledebaño.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -401,7 +282,7 @@
                 <h1 class="text-center mb-5">Recepcion</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_recepcion/Recepcion1.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_recepcion/Recepcion1.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                     <p>
@@ -415,7 +296,7 @@
                     </p>
                 </div>
                 
-                <form action="categorias/recepcion.html" method="get">
+                <form action="../usuarios/categorias-usuario/recepcion.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -431,7 +312,7 @@
                 <h1 class="text-center mb-5">Puertas</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_puertas/Puerta2.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_puertas/Puerta2.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                     <p>
@@ -445,7 +326,7 @@
                     </p>
                 </div>
                 
-                <form action="categorias/puertas.html" method="get">
+                <form action="../usuarios/categorias-usuario/puertas.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -461,7 +342,7 @@
                 <h1 class="text-center mb-5">Centro de Entretenimiento</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                      <p>
@@ -475,7 +356,7 @@
                     </p>
                 </div>
                
-                <form action="categorias/entretinimiento.html" method="get">
+                <form action="../usuarios/categorias-usuario/entretinimiento.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -491,7 +372,7 @@
                 <h1 class="text-center mb-5">Mucho mas</h1>
                 
                 <div class="modal-image-cate mb-5">
-                    <img src="assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" alt="cocinas" class="img-fluid rounded">
+                    <img src="../assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" alt="cocinas" class="img-fluid rounded">
                 </div>
                 <div class="descripcion-producto mb-2">
                     <p>
@@ -504,7 +385,7 @@
                     </p>
                 </div>
                 
-                <form action="categorias/muchomas.html" method="get">
+                <form action="../usuarios/categorias-usuario/muchomas.html" method="get">
                     <button type="submit" class="btn btn-dark w-100 modal-button">Ver categoria</button> 
                 </form>
             </div>
@@ -517,9 +398,9 @@
         <div class="container text-center py-3">
             <h5 class=" mt-5 mb-3">COCINAS VALCUCINI</h5>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="sobre_nosotros.html" class="footer-link">ACERCA DE NOSOTROS</a></li>
-                <li class="list-inline-item"><a href="categoria.html" class="footer-link">CATEGORÍAS</a></li>
-                <li class="list-inline-item"><a href="index.html" class="footer-link">INFORMACIÓN</a><li></li>
+                <li class="list-inline-item"><a href="../usuarios/sobre_nosotros -usuario.html" class="footer-link">ACERCA DE NOSOTROS</a></li>
+                <li class="list-inline-item"><a href="../usuarios/categoria-usuario.html" class="footer-link">CATEGORÍAS</a></li>
+                <li class="list-inline-item"><a href="../cliente.html" class="footer-link">INFORMACIÓN</a><li></li>
                     
             </ul>
             <div class="my-3">
@@ -546,7 +427,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
-    <script type="module" src="../assets/js/firebase-config.js"></script>
+    <script type="module" src="../../assets/js/firebase-config.js"></script>
 
 
 </body>
