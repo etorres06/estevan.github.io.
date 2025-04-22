@@ -1,3 +1,21 @@
+body {
+  padding-top: 70px;
+  background-color: #bb9d85;
+  color: #0f0f0f;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+}
+
+button{
+  font-family: 'Viga', sans-serif;
+}
+
 .content-trabajo {
   text-align: center;
   padding: 40px 30px;
