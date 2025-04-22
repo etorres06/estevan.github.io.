@@ -33,26 +33,14 @@
 .buttons {
     margin-top: 20px;
 }
-.btn-whatsapp {
-    background-color: #51dfccbe !important;
-    border-color: #51dfccbe !important;
-    color: rgb(0, 0, 0) !important;
-}
 
-.btn-whatsapp:hover {
-    background-color: #3cbba4c0 !important;
-    border-color: #3cbba4c0 !important;
-}
-.btn-whatsapp, .btn-explora {
+.btn-explora {
     margin-right: 10px;
     padding: 10px 20px;
     font-size: 1.2rem;
     transition: transform 0.3s ease-in-out;
 }
 
-.btn:hover {
-    transform: scale(1.1);
-}
 .btn-explora {
     background-color: white !important;
     border: 2px solid #3cbba4c0 !important;
