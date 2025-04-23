@@ -44,6 +44,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="../sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../trabajaconnosotros.html">Trabaja Con Nosotros</a></li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-5" type="search" placeholder="Buscar...">
@@ -205,7 +206,6 @@
                             <li><strong>Colores:</strong> Wengue en muebles, mesón claro, detalles metálicos en manijas y electrodomésticos.</li>
                         </ul>
 
-                        <p class="calificacion">⭐⭐⭐⭐⭐</p>
                         <div class="specs">
                             <h3>Especificaciones principales</h3>
                             <ul>
@@ -213,39 +213,54 @@
                                 <li><strong>Garantía:</strong> 6 meses</li>
                                 <li><strong>Acabado:</strong> Mate</li>
                             </ul>
-                             <!-- Botón para abrir el modal de contacto -->
-                             <button type="button" class="btn btn-formu" data-bs-toggle="modal" data-bs-target="#modalLoginRequired">
-                                Realiza tu cotización
-                            </button>
-                              
-                              
-            
-                            <!-- Modal de Alerta de Inicio de Sesión -->
-                            <div class="modal fade" id="modalLoginRequired" tabindex="-1" aria-labelledby="modalLoginRequiredLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-attention">
-                                  <div class="modal-content border border-warning shadow-lg">
-                                    <div class="modal-header bg-warning text-white">
-                                      <h5 class="modal-title" id="modalLoginRequiredLabel">Atención</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            <!-- Botón para abrir el modal de contacto -->
+                            <button type="button" class="btn btn-formu" data-bs-toggle="modal" data-bs-target="#modalLoginRequired">
+                                Realiza tu cotización</button>
+                             <button class="btn btn-outline-light btn-opinion ms-2" data-bs-toggle="modal" data-bs-target="#modalLoginRequi">
+                                    Escribir una opinión</button>
+                        </div>
+                        <!-- Modal de Alerta de Inicio de Sesión -->
+                         <div class="modal fade" id="modalLoginRequired" tabindex="-1" aria-labelledby="modalLoginRequiredLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-attention">
+                            <div class="modal-content border border-warning shadow-lg">
+                                <div class="modal-header bg-warning text-white">
+                                <h5 class="modal-title" id="modalLoginRequiredLabel">Atención</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                    <div class="modal-body">
+                                        Debes iniciar sesión para poder contactarnos.
                                     </div>
-                                        <div class="modal-body">
-                                            Debes iniciar sesión para poder contactarnos.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
-                                                Iniciar Sesión
-                                            </button>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
+                                            Iniciar Sesión
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
-                           
+                        </div>
+
+                        <!-- Modal de Alerta de Inicio de Sesión  reseñas-->
+                        <div class="modal fade" id="modalLoginRequi" tabindex="-1" aria-labelledby="#modalLoginRequiLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-attention">
+                            <div class="modal-content border border-warning shadow-lg">
+                                <div class="modal-header bg-warning text-white">
+                                <h5 class="modal-title" id="#modalLoginRequiLabel">Atención</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                    <div class="modal-body">
+                                        Debes iniciar sesión para poder dejarnos una reseña.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
+                                            Iniciar Sesión
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </article>
-            </div>       
-        </div>
     </main>
     <footer>
         <div class="container text-center py-3">

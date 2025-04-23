@@ -44,6 +44,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="../sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../trabajaconnosotros.html">Trabaja Con Nosotros</a></li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-5" type="search" placeholder="Buscar...">
@@ -215,84 +216,52 @@
                             </ul>
                              <!-- Botón para abrir el modal de contacto -->
                              <button type="button" class="btn btn-formu" data-bs-toggle="modal" data-bs-target="#modalLoginRequired">
-                                Realiza tu cotización
-                                <button class="btn btn-outline-light btn-opinion ms-2" data-bs-toggle="modal" data-bs-target="#modalResena">
-                                    Escribir una opinión
-                            </button>
+                                Realiza tu cotización</button>
+                             <button class="btn btn-outline-light btn-opinion ms-2" data-bs-toggle="modal" data-bs-target="#modalLoginRequi">
+                                    Escribir una opinión</button>
+                        </div>
+                        <!-- Modal de Alerta de Inicio de Sesión -->
+                         <div class="modal fade" id="modalLoginRequired" tabindex="-1" aria-labelledby="modalLoginRequiredLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-attention">
+                            <div class="modal-content border border-warning shadow-lg">
+                                <div class="modal-header bg-warning text-white">
+                                <h5 class="modal-title" id="modalLoginRequiredLabel">Atención</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                    <div class="modal-body">
+                                        Debes iniciar sesión para poder contactarnos.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
+                                            Iniciar Sesión
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="w-100 mt-4">
-                            <h3 class="my-3 text-start text-withe text-roboto-slab">Opiniones de nuestros clientes</h3>
-                            <div class="contenedor-resenas" id="listaResenas"></div>
-                          </div>
-                      </div>
-                    </div>
-                </article>              
-          </div>
-        </div>
-
-           <!-- Modal para escribir una opinión -->
-        <div class="modal fade" id="modalResena" tabindex="-1" aria-labelledby="modalResenaLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form id="formResena">
-                    <div class="modal-content text-manrope">
-                        <div class="modal-header">
-                        <h5 class="modal-title text-roboto-slab" id="modalResenaLabel">Comparte tu opinión</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                        </div>
-                        <div class="modal-body">
-                        <label>Califica tu experiencia</label>
-                        <div id="estrellasContainer" class="mb-3 d-flex gap-1">
-                            <i class="bi bi-star estrella" data-value="1"></i>
-                            <i class="bi bi-star estrella" data-value="2"></i>
-                            <i class="bi bi-star estrella" data-value="3"></i>
-                            <i class="bi bi-star estrella" data-value="4"></i>
-                            <i class="bi bi-star estrella" data-value="5"></i>
-                        </div>
-                        <input type="hidden" id="calificacion" value="0">
-                        <div class="mb-3">
-                            <label for="opinion" class="form-label">Escribe una opinión</label>
-                            <textarea class="form-control" id="opinion" rows="3" placeholder="Cuéntanos qué te gusta o qué no te gusta" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="titulo" class="form-label">Agrega un título</label>
-                            <input type="text" class="form-control" id="titulo" placeholder="Resume tu experiencia" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Tu nombre</label>
-                            <input type="text" class="form-control" id="nombre">
-                        </div>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="submit" class="btn btn-mint">Enviar</button>
-                        </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-
-            <!-- Modal de Alerta de Inicio de Sesión -->
-            <div class="modal fade" id="modalLoginRequired" tabindex="-1" aria-labelledby="modalLoginRequiredLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-attention">
-                  <div class="modal-content border border-warning shadow-lg">
-                    <div class="modal-header bg-warning text-white">
-                      <h5 class="modal-title" id="modalLoginRequiredLabel">Atención</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                        <div class="modal-body">
-                            Debes iniciar sesión para poder contactarnos.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
-                                Iniciar Sesión
-                            </button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <!-- Modal de Alerta de Inicio de Sesión  reseñas-->
+                        <div class="modal fade" id="modalLoginRequi" tabindex="-1" aria-labelledby="#modalLoginRequiLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-attention">
+                            <div class="modal-content border border-warning shadow-lg">
+                                <div class="modal-header bg-warning text-white">
+                                <h5 class="modal-title" id="#modalLoginRequiLabel">Atención</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                    <div class="modal-body">
+                                        Debes iniciar sesión para poder dejarnos una reseña.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#RegistroModal">
+                                            Iniciar Sesión
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
     </main>
     <footer>
         <div class="container text-center py-3">
