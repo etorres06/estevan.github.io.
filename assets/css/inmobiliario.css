@@ -110,18 +110,6 @@ button{
     animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
 }
 
-/* Efecto de borde con iluminación */
-.modal-image-cate::before {
-    content: "";
-    position: absolute;
-    width: 52%;
-    height: 45%;
-    border-radius: 15px;
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 0px 30px #3cbba4c0;
-    opacity: 0;
-    animation: glowBorder 2.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
-}
 
 /* Animación de la imagen */
 @keyframes fadeInImage {
