@@ -146,12 +146,43 @@ button{
         transform: scale(1);
     }
 }
-.descripcion-producto{
-    background-color: #fde9d7f0;
+
+.descripcion-producto {
+    background-color: #fde9d7f0;; /* blanco translúcido para legibilidad */
+    backdrop-filter: blur(10px); /* efecto glassmorphism suave */
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.descripcion-producto:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 
+.descripcion-producto p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #2b2b2b;
+}
 
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .descripcion-producto {
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 12px;
+    }
+
+    .descripcion-producto p {
+        font-size: 1rem;
+    }
+}
 
 /* Texto dentro del modal */
 .modal-content-cate p {
